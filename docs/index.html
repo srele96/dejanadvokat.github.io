@@ -1,12 +1,418 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+    <title>Advokat Marko Petrović - Beograd</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
+      body {
+        font-family: "Georgia", serif;
+        line-height: 1.6;
+        color: #2c3e50;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(116, 75, 162, 0.1),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      @keyframes shimmer {
+        0% {
+          transform: translateX(-100%) translateY(-100%) rotate(45deg);
+        }
+        100% {
+          transform: translateX(100%) translateY(100%) rotate(45deg);
+        }
+      }
+
+      .header h1 {
+        color: #2c3e50;
+        font-size: 3em;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .header .subtitle {
+        color: #7f8c8d;
+        font-size: 1.3em;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
+        flex-wrap: wrap;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: rgba(116, 75, 162, 0.1);
+        padding: 15px 25px;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+      }
+
+      .contact-item:hover {
+        background: rgba(116, 75, 162, 0.2);
+        transform: translateY(-2px);
+      }
+
+      .contact-icon {
+        width: 20px;
+        height: 20px;
+        fill: #764ba2;
+      }
+
+      .section {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 40px;
+        margin-bottom: 30px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .section:hover {
+        transform: translateY(-5px);
+      }
+
+      .section h2 {
+        color: #2c3e50;
+        font-size: 2.2em;
+        margin-bottom: 25px;
+        border-bottom: 3px solid #764ba2;
+        padding-bottom: 10px;
+        position: relative;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #667eea;
+        transition: width 0.3s ease;
+      }
+
+      .section:hover h2::after {
+        width: 100px;
+      }
+
+      .experience-item {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        border-radius: 15px;
+        padding: 25px;
+        margin-bottom: 20px;
+        border-left: 5px solid #764ba2;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .experience-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 10px 25px rgba(116, 75, 162, 0.2);
+      }
+
+      .experience-item h3 {
+        color: #2c3e50;
+        font-size: 1.4em;
+        margin-bottom: 10px;
+      }
+
+      .experience-item .case-type {
+        color: #764ba2;
+        font-weight: bold;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+
+      .experience-item p {
+        color: #5a6c7d;
+        line-height: 1.7;
+      }
+
+      .education {
+        background: linear-gradient(135deg, #764ba2, #667eea);
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .education::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        animation: slide 2s infinite;
+      }
+
+      @keyframes slide {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+
+      .education h2 {
+        color: white;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .education .degree {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .education .university {
+        font-size: 1.1em;
+        opacity: 0.9;
+        position: relative;
+        z-index: 1;
+      }
+
+      .education .date {
+        font-size: 1em;
+        opacity: 0.8;
+        margin-top: 15px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 30px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.9em;
+      }
+
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 2.2em;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          align-items: center;
+          gap: 15px;
+        }
+
+        .section {
+          padding: 25px;
+        }
+
+        .section h2 {
+          font-size: 1.8em;
+        }
+      }
+    </style>
+  </head>
   <body>
-    <h1>Document</h1>
+    <div class="container">
+      <header class="header">
+        <h1>Advokat Marko Petrović</h1>
+        <p class="subtitle">Pravni saveti i zastupanje u Beogradu</p>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <span>Knez Mihailova 42, Beograd</span>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <span>+381 11 234 5678</span>
+          </div>
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            <span>marko.petrovic@advokat.rs</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="section education">
+        <h2>Obrazovanje</h2>
+        <div class="degree">Diplomirani pravnik</div>
+        <div class="university">Pravni fakultet Univerziteta u Beogradu</div>
+        <div class="date">Diplomirao: 15. jul 2018.</div>
+      </section>
+
+      <section class="section">
+        <h2>Oblasti rada</h2>
+        <p
+          style="
+            font-size: 1.1em;
+            color: #5a6c7d;
+            line-height: 1.8;
+            margin-bottom: 30px;
+          "
+        >
+          Specijalizovan sam za građansko pravo, krivično pravo, porodično pravo
+          i radno pravo. Pružam kompletne pravne usluge sa fokusom na brzu i
+          efikasnu zaštitu interesa mojih klijenata.
+        </p>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+          "
+        >
+          <div class="experience-item">
+            <h3>Građansko pravo</h3>
+            <p>Ugovori, naknada štete, svojinska prava</p>
+          </div>
+          <div class="experience-item">
+            <h3>Krivično pravo</h3>
+            <p>Odbrana u krivičnim postupcima</p>
+          </div>
+          <div class="experience-item">
+            <h3>Porodično pravo</h3>
+            <p>Razvod braka, starateljstvo, alimentacija</p>
+          </div>
+          <div class="experience-item">
+            <h3>Radno pravo</h3>
+            <p>Radni sporovi, otkazi, kolektivni ugovori</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Iskustvo i uspešni slučajevi</h2>
+
+        <div class="experience-item">
+          <div class="case-type">Građansko pravo</div>
+          <h3>Naknada štete u saobraćajnoj nesreći</h3>
+          <p>
+            Uspešno zastupanje klijenta u sporu protiv osiguravajuće kuće za
+            naknadu materijalne i nematerijalne štete. Ostvarena naknada od
+            850.000 dinara. Postupak završen u roku od 8 meseci kroz vanparnično
+            poravnanje.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <div class="case-type">Porodično pravo</div>
+          <h3>Razvod braka sa podjelom imovine</h3>
+          <p>
+            Kompleksan slučaj razvoda braka sa značajnom zajedničkom imovinom.
+            Ostvareno sporazumno rešenje koje je zadovoljilo sve strane uz
+            očuvanje interesa maloletne dece. Postupak završen u roku od 6
+            meseci.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <div class="case-type">Krivično pravo</div>
+          <h3>Odbrana u postupku za privredni prekršaj</h3>
+          <p>
+            Uspešna odbrana klijenta u postupku za privredni prekršaj. Dokazana
+            neosnovnost optužbe, što je rezultovalo potpunim oslobađanjem od
+            odgovornosti i izbegavanjem kazne od 500.000 dinara.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <div class="case-type">Radno pravo</div>
+          <h3>Spor zbog nezakonitog otkaza</h3>
+          <p>
+            Zastupanje radnika u sporu protiv poslodavca zbog nezakonitog
+            otkaza. Ostvareno vraćanje na posao uz naknadu štete za period
+            privremene nezaposlenosti u iznosu od 320.000 dinara.
+          </p>
+        </div>
+
+        <div class="experience-item">
+          <div class="case-type">Svojinsko pravo</div>
+          <h3>Rešavanje spora oko graničnih označavanja</h3>
+          <p>
+            Kompleksan slučaj razgraničavanja zemljišta između susednih parcela.
+            Kroz detaljnu analizu katastarskih podataka i terenske provere,
+            ostvaren povoljn rezultat za klijenta.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2025 Advokat Marko Petrović. Sva prava zadržana.</p>
+        <p>Licenca Advokatske komore Srbije br. 4721</p>
+      </footer>
+    </div>
   </body>
 </html>
