@@ -9,7 +9,15 @@
       content="Advokat Dejan Vasiljević iz Zemuna nudi pravno savetovanje i zastupanje u parnicama, krivičnim, radnim i privrednim sporovima. Kontaktirajte nas za pouzdanu pravnu pomoć."
     />
     <link rel="icon" href="favicon.ico" />
-    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link
+      rel="preload"
+      as="image"
+      href="avatar-516.webp"
+      imagesrcset="avatar-352.webp 352w, avatar-516.webp 516w, avatar-600.webp 600w"
+      imagesizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
+    />
+    <link rel="preload" as="style" href="output.css" />
+    <link rel="stylesheet" href="output.css" />
   </head>
   <body class="text-[#111] bg-white font-sans leading-relaxed">
     <div class="min-h-screen flex flex-col">
@@ -122,11 +130,26 @@
               <div
                 class="flex flex-col sm:flex-row md:flex-col gap-6 items-center md:items-start"
               >
-                <img
-                  src="avatar.jpg"
-                  alt="Advokat Dejan Vasiljević"
-                  class="rounded-lg border border-gray-300 w-full md:w-full object-cover"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      avatar-352.webp 352w,
+                      avatar-516.webp 516w,
+                      avatar-600.webp 600w
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    src="avatar-516.webp"
+                    alt="Advokat Dejan Vasiljević"
+                    width="600"
+                    height="397"
+                    class="rounded-lg border border-gray-300 w-full md:w-full object-cover"
+                    loading="eager"
+                    fetchpriority="high"
+                    sizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
+                  />
+                </picture>
                 <div class="w-full flex justify-center">
                   <p
                     class="italic font-serif text-gray-700 text-lg sm:text-xl md:text-xl lg:text-2xl text-center leading-snug tracking-wide max-w-md"
