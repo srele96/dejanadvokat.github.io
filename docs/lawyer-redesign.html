@@ -25,12 +25,12 @@
 
           <!-- Mobile toggle -->
           <button
-            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold"
+            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold inline-flex items-center gap-2"
             aria-expanded="false"
             aria-controls="site-nav"
             aria-label="Otvori navigaciju"
           >
-            Meni
+            <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
 
           <!-- Navigation -->
@@ -43,29 +43,33 @@
               <li class="border-t md:border-0">
                 <a
                   href="#hero"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Početna</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="home" class="w-4 h-4"></i
+                  ><span>Početna</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#services"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Oblasti delovanja</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="layers" class="w-4 h-4"></i
+                  ><span>Oblasti delovanja</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#cases"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Pravni predmeti</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="briefcase" class="w-4 h-4"></i
+                  ><span>Pravni predmeti</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#contact"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Kontakt</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="phone" class="w-4 h-4"></i
+                  ><span>Kontakt</span></a
                 >
               </li>
             </ul>
@@ -94,14 +98,20 @@
                     pravnu sigurnost, poverenje i profesionalno zastupanje.
                   </p>
                 </div>
-                <ul class="space-y-1 text-gray-800">
-                  <li>
-                    <span class="font-semibold">Adresa:</span> Zemun, Prvomajska
-                    112
+                <ul class="space-y-2 text-gray-800">
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-700"></i>
+                    <span
+                      ><span class="font-semibold">Adresa:</span> Zemun,
+                      Prvomajska 112</span
+                    >
                   </li>
-                  <li>
-                    <span class="font-semibold">Email:</span>
-                    <span class="email-container"></span>
+                  <li class="flex items-center gap-2">
+                    <i data-lucide="mail" class="w-4 h-4 text-gray-700"></i>
+                    <span
+                      ><span class="font-semibold">Email:</span>
+                      <span class="email-container"></span
+                    ></span>
                   </li>
                 </ul>
               </div>
@@ -457,9 +467,16 @@
           <div>
             <h3 class="font-bold text-lg mb-3">Kontakt i lokacija</h3>
             <ul class="space-y-2 text-sm text-white/80">
-              <li>Adresa: Prvomajska 112, Zemun, Beograd</li>
-              <li>Email: <span class="email-container"></span></li>
-              <li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4"></i
+                ><span>Adresa: Prvomajska 112, Zemun, Beograd</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i
+                ><span>Email: <span class="email-container"></span></span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
                 <a
                   class="text-white underline"
                   href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
@@ -479,6 +496,7 @@
       </footer>
     </div>
 
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       (function obfuscateEmail() {
         const user = "vasiljevicdejan21";
@@ -537,6 +555,9 @@
           }
         });
       })();
+      if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
+      }
     </script>
   </body>
 </html>
