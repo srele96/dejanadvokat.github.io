@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Advokat Marko Petrović Beograd | Pravni saveti | Advokatska kancelarija
+      Advokat Dejan Vasiljevic | Pravni saveti | Advokatska kancelarija
     </title>
 
     <meta
       name="description"
-      content="Advokat Marko Petrović - advokatska kancelarija u Beogradu. Specijalizovani za građansko, krivično, porodično i radno pravo. Knez Mihailova 42, Beograd. Tel: 011 234 5678"
+      content="Advokat Dejan Vasiljevic - profesionalne pravne usluge. Zemun, Prvomajska 112. Kontakt: vasiljevicdejan21@gmail.com"
     />
     <meta
       name="keywords"
       content="advokat Beograd, advokatska kancelarija Beograd, pravni saveti Beograd, advokat Zemun, građansko pravo, krivično pravo, porodično pravo, radno pravo, razvod braka, naknada štete, Marko Petrović advokat, Stari grad, Novi Beograd, Vračar, Zvezdara, Palilula, Savski venac, Rakovica, Čukarica, Voždovac, Barajevo, Grocka, Lazarevac, Mladenovac, Obrenovac, Sopot, Surčin"
     />
-    <meta name="author" content="Advokat Marko Petrović" />
+    <meta name="author" content="Advokat Dejan Vasiljevic" />
     <meta name="robots" content="index, follow" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
@@ -23,58 +23,41 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
 
+    <!-- Decorative font for the name -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LegalService",
-        "name": "Advokatska kancelarija Marko Petrović",
-        "url": "https://www.advokat-petrovic.rs",
-        "description": "Advokatska kancelarija specijalizovana za građansko, krivično, porodično i radno pravo u Beogradu",
+        "name": "Advokatska kancelarija Dejan Vasiljevic",
+        "description": "Advokatska kancelarija u Zemunu - profesionalne pravne usluge",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Knez Mihailova 42",
-          "addressLocality": "Beograd",
-          "addressRegion": "Srbija",
-          "postalCode": "11000",
+          "streetAddress": "Prvomajska 112",
+          "addressLocality": "Zemun",
+          "addressRegion": "Beograd",
           "addressCountry": "RS"
         },
-        "telephone": "+381112345678",
-        "email": "marko.petrovic@advokat.rs",
-        "openingHours": "Mo-Fr 09:00-17:00",
-        "areaServed": [
-          "Beograd",
-          "Zemun",
-          "Novi Beograd",
-          "Stari grad",
-          "Vračar",
-          "Zvezdara",
-          "Palilula",
-          "Savski venac",
-          "Rakovica",
-          "Čukarica",
-          "Voždovac",
-          "Barajevo",
-          "Grocka",
-          "Lazarevac",
-          "Mladenovac",
-          "Obrenovac",
-          "Sopot",
-          "Surčin"
-        ],
+        "email": "vasiljevicdejan21@gmail.com",
         "serviceType": [
-          "Građansko pravo",
+          "Parnica",
+          "Nekretnine",
+          "Korporativno pravo",
           "Krivično pravo",
-          "Porodično pravo",
           "Radno pravo",
-          "Razvod braka",
-          "Naknada štete"
-        ],
-        "founder": {
-          "@type": "Person",
-          "name": "Marko Petrović",
-          "jobTitle": "Advokat",
-          "alumniOf": "Pravni fakultet Univerziteta u Beogradu"
-        }
+          "Poresko pravo",
+          "Naknada štete",
+          "Porodično i nasledno pravo",
+          "Pravo intelektualne svojine i mediji",
+          "Privredno pravo",
+          "Naplata potraživanja i izvršenje"
+        ]
       }
     </script>
 
@@ -301,25 +284,99 @@
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
       }
 
-      .area-tag {
-        background-color: #000000;
-        color: #ffffff;
-        padding: 8px 16px;
-        border-radius: 4px;
-        font-size: 0.9em;
-        font-weight: 500;
-        border: 2px solid #000000;
+      .area-item {
+        background-color: #f1f3f5;
+        color: #111;
+        padding: 10px 14px;
+        border-radius: 999px;
+        font-size: 0.95em;
+        font-weight: 600;
+        border: 1px solid #e6e9ed;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+      }
+
+      .motto {
+        font-family: "Great Vibes", cursive;
+        font-size: 1.6rem;
+        margin-top: 10px;
+        color: #111;
+      }
+
+      /* About section grid */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        gap: 20px;
+        align-items: center; /* vertically center image with text */
+        align-content: start;
+      }
+
+      .about-left img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        display: block;
+      }
+
+      .about-right p {
+        margin-top: 6px;
+        color: #111;
+        line-height: 1.7;
+      }
+
+      .about-right .motto {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+        color: #111;
+      }
+
+      @media (max-width: 768px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+        .about-left, .about-right { justify-self: center; }
+        .about-right p { margin: 12px 0 0; }
       }
 
       .footer {
-        text-align: center;
-        padding: 30px;
+        display: flex;
+        gap: 18px;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 28px 16px;
         color: #000000;
-        font-size: 0.9em;
+        font-size: 0.95em;
         border-top: 2px solid #e9ecef;
         margin-top: 20px;
+      }
+
+      .footer-content {
+        flex: 1 1 60%;
+        min-width: 220px;
+        text-align: left;
+      }
+
+      .footer-map {
+        flex: 0 0 260px;
+        max-width: 260px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #e9ecef;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+        background: #fff;
+      }
+
+      .footer-map iframe {
+        width: 100%;
+        height: 200px;
+        display: block;
+        border: 0;
       }
 
       @media (max-width: 768px) {
@@ -364,8 +421,8 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1>Advokat Marko Petrović</h1>
-        <p class="subtitle">Profesionalne pravne usluge u Beogradu i okolini</p>
+        <h1>Advokat Dejan Vasiljevic</h1>
+        <p class="subtitle">Pružanje profesionalnih pravnih usluga</p>
 
         <div class="contact-info">
           <div class="contact-item">
@@ -374,7 +431,7 @@
                 d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
               />
             </svg>
-            <span>Knez Mihailova 42, Beograd</span>
+            <span>Address: Zemun, Prvomajska 112</span>
           </div>
           <div class="contact-item">
             <svg class="contact-icon" viewBox="0 0 24 24">
@@ -382,7 +439,7 @@
                 d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
               />
             </svg>
-            <span>+381 11 234 5678</span>
+            <span>Phone:</span>
           </div>
           <div class="contact-item">
             <svg class="contact-icon" viewBox="0 0 24 24">
@@ -390,189 +447,137 @@
                 d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
               />
             </svg>
-            <span>marko.petrovic@advokat.rs</span>
+            <span
+              >Mail:
+              <a href="mailto:vasiljevicdejan21@gmail.com"
+                >vasiljevicdejan21@gmail.com</a
+              ></span
+            >
           </div>
         </div>
       </header>
 
-      <section class="section education">
-        <h2>Obrazovanje</h2>
-        <div class="degree">Diplomirani pravnik</div>
-        <div class="university">Pravni fakultet Univerziteta u Beogradu</div>
-        <div class="date">Diplomirao: 15. jul 2018.</div>
-      </section>
-
-      <section class="section">
-        <h2>Pravne specijalnosti</h2>
-        <p
-          style="
-            font-size: 1.1em;
-            color: #000000;
-            line-height: 1.8;
-            margin-bottom: 30px;
-          "
-        >
-          Pružam kompletne pravne usluge sa fokusom na brzu i efikasnu zaštitu
-          interesa mojih klijenata u svim delovima Beograda i okolini.
-        </p>
-
-        <div class="specialties-grid">
-          <div class="specialty-card">
-            <div class="specialty-icon">⚖️</div>
-            <h3>Građansko pravo</h3>
-            <ul>
-              <li>Ugovorno pravo</li>
-              <li>Naknada štete</li>
-              <li>Svojinska prava</li>
-              <li>Obligaciono pravo</li>
-              <li>Nekretnine</li>
-            </ul>
+      <main>
+        <section class="section intro-section">
+          <h2>O meni</h2>
+          <div class="about-grid">
+            <div class="about-left">
+              <img src="avatar.webp" alt="Advokat Dejan Vasiljević" />
+            </div>
+            <div class="about-right">
+              <div class="motto">“Da mihi facta, dabo tibi ius”</div>
+              <p>
+                Sa dugogodišnjim iskustvom u građanskom, krivičnom i privrednom
+                pravu, pružam klijentima pravnu sigurnost, poverenje i
+                profesionalno zastupanje.
+              </p>
+            </div>
           </div>
+        </section>
 
-          <div class="specialty-card">
-            <div class="specialty-icon">🛡️</div>
-            <h3>Krivično pravo</h3>
-            <ul>
-              <li>Odbrana u krivičnim postupcima</li>
-              <li>Privredni prekršaji</li>
-              <li>Saobraćajni prekršaji</li>
-              <li>Prekršaji iz oblasti javnog reda</li>
-              <li>Žalbe i pravni lekovi</li>
-            </ul>
-          </div>
-
-          <div class="specialty-card">
-            <div class="specialty-icon">👨‍👩‍👧‍👦</div>
-            <h3>Porodično pravo</h3>
-            <ul>
-              <li>Razvod braka</li>
-              <li>Podela imovine</li>
-              <li>Starateljstvo dece</li>
-              <li>Alimentacija</li>
-              <li>Vanbračna zajednica</li>
-            </ul>
-          </div>
-
-          <div class="specialty-card">
-            <div class="specialty-icon">💼</div>
-            <h3>Radno pravo</h3>
-            <ul>
-              <li>Radni sporovi</li>
-              <li>Nezakoniti otkazi</li>
-              <li>Kolektivni ugovori</li>
-              <li>Mobbing na radnom mestu</li>
-              <li>Radni odnosi</li>
-            </ul>
-          </div>
-
-          <div class="specialty-card">
-            <div class="specialty-icon">🏢</div>
-            <h3>Privredno pravo</h3>
-            <ul>
-              <li>Osnivanje privrednih društava</li>
-              <li>Privredni sporovi</li>
-              <li>Stečajni postupci</li>
-              <li>Javne nabavke</li>
-              <li>Korporativno pravo</li>
-            </ul>
-          </div>
-
-          <div class="specialty-card">
-            <div class="specialty-icon">📋</div>
-            <h3>Upravno pravo</h3>
-            <ul>
-              <li>Upravni sporovi</li>
-              <li>Dozvole i licenciranje</li>
-              <li>Inspekcijski nadzor</li>
-              <li>Javna uprava</li>
-              <li>Poresko pravo</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="service-areas">
-          <h3>Područja koje pokrivamo</h3>
-          <div class="areas-list">
-            <span class="area-tag">Stari grad</span>
-            <span class="area-tag">Novi Beograd</span>
-            <span class="area-tag">Zemun</span>
-            <span class="area-tag">Vračar</span>
-            <span class="area-tag">Zvezdara</span>
-            <span class="area-tag">Palilula</span>
-            <span class="area-tag">Savski venac</span>
-            <span class="area-tag">Rakovica</span>
-            <span class="area-tag">Čukarica</span>
-            <span class="area-tag">Voždovac</span>
-            <span class="area-tag">Barajevo</span>
-            <span class="area-tag">Grocka</span>
-            <span class="area-tag">Lazarevac</span>
-            <span class="area-tag">Mladenovac</span>
-            <span class="area-tag">Obrenovac</span>
-            <span class="area-tag">Sopot</span>
-            <span class="area-tag">Surčin</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2>Iskustvo i uspešni slučajevi</h2>
-
-        <div class="experience-item">
-          <div class="case-type">Građansko pravo</div>
-          <h3>Naknada štete u saobraćajnoj nesreći</h3>
-          <p>
-            Uspešno zastupanje klijenta u sporu protiv osiguravajuće kuće za
-            naknadu materijalne i nematerijalne štete. Ostvarena naknada od
-            850.000 dinara. Postupak završen u roku od 8 meseci kroz vanparnično
-            poravnanje.
+        <section class="section">
+          <h2>Oblasti delovanja</h2>
+          <p style="font-size: 1.05em; margin-bottom: 12px">
+            Nudimo profesionalne pravne usluge u sledećim oblastima:
           </p>
-        </div>
+          <ul class="areas-list" style="justify-content: flex-start">
+            <li class="area-item">Parnica</li>
+            <li class="area-item">Nekretnine</li>
+            <li class="area-item">Korporativno pravo</li>
+            <li class="area-item">Krivično Pravo</li>
+            <li class="area-item">Radno pravo</li>
+            <li class="area-item">Poresko pravo</li>
+            <li class="area-item">Naknada Štete</li>
+            <li class="area-item">Porodično i nasledno pravo</li>
+            <li class="area-item">Pravo intelektualne svojine i mediji</li>
+            <li class="area-item">Privredno Pravo</li>
+            <li class="area-item">Naplata potraživanja i izvršenje</li>
+          </ul>
+        </section>
 
-        <div class="experience-item">
-          <div class="case-type">Porodično pravo</div>
-          <h3>Razvod braka sa podjelom imovine</h3>
-          <p>
-            Kompleksan slučaj razvoda braka sa značajnom zajedničkom imovinom.
-            Ostvareno sporazumno rešenje koje je zadovoljilo sve strane uz
-            očuvanje interesa maloletne dece. Postupak završen u roku od 6
-            meseci.
-          </p>
-        </div>
+        <section class="section">
+          <h2>Iskustvo i uspešni slučajevi</h2>
 
-        <div class="experience-item">
-          <div class="case-type">Krivično pravo</div>
-          <h3>Odbrana u postupku za privredni prekršaj</h3>
-          <p>
-            Uspešna odbrana klijenta u postupku za privredni prekršaj. Dokazana
-            neosnovnost optužbe, što je rezultovalo potpunim oslobađanjem od
-            odgovornosti i izbegavanjem kazne od 500.000 dinara.
-          </p>
-        </div>
+          <div class="experience-item">
+            <div class="case-type">Građansko pravo</div>
+            <h3>Naknada štete u saobraćajnoj nesreći</h3>
+            <p>
+              Uspešno zastupanje klijenta u sporu protiv osiguravajuće kuće za
+              naknadu materijalne i nematerijalne štete. Ostvarena naknada od
+              850.000 dinara. Postupak završen u roku od 8 meseci kroz
+              vanparnično poravnanje.
+            </p>
+          </div>
 
-        <div class="experience-item">
-          <div class="case-type">Radno pravo</div>
-          <h3>Spor zbog nezakonitog otkaza</h3>
-          <p>
-            Zastupanje radnika u sporu protiv poslodavca zbog nezakonitog
-            otkaza. Ostvareno vraćanje na posao uz naknadu štete za period
-            privremene nezaposlenosti u iznosu od 320.000 dinara.
-          </p>
-        </div>
+          <div class="experience-item">
+            <div class="case-type">Porodično pravo</div>
+            <h3>Razvod braka sa podjelom imovine</h3>
+            <p>
+              Kompleksan slučaj razvoda braka sa značajnom zajedničkom imovinom.
+              Ostvareno sporazumno rešenje koje je zadovoljilo sve strane uz
+              očuvanje interesa maloletne dece. Postupak završen u roku od 6
+              meseci.
+            </p>
+          </div>
 
-        <div class="experience-item">
-          <div class="case-type">Svojinsko pravo</div>
-          <h3>Rešavanje spora oko graničnih označavanja</h3>
-          <p>
-            Kompleksan slučaj razgraničavanja zemljišta između susednih parcela.
-            Kroz detaljnu analizu katastarskih podataka i terenske provere,
-            ostvaren povoljn rezultat za klijenta.
-          </p>
-        </div>
-      </section>
+          <div class="experience-item">
+            <div class="case-type">Krivično pravo</div>
+            <h3>Odbrana u postupku za privredni prekršaj</h3>
+            <p>
+              Uspešna odbrana klijenta u postupku za privredni prekršaj.
+              Dokazana neosnovnost optužbe, što je rezultovalo potpunim
+              oslobađanjem od odgovornosti i izbegavanjem kazne od 500.000
+              dinara.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <div class="case-type">Radno pravo</div>
+            <h3>Spor zbog nezakonitog otkaza</h3>
+            <p>
+              Zastupanje radnika u sporu protiv poslodavca zbog nezakonitog
+              otkaza. Ostvareno vraćanje na posao uz naknadu štete za period
+              privremene nezaposlenosti u iznosu od 320.000 dinara.
+            </p>
+          </div>
+
+          <div class="experience-item">
+            <div class="case-type">Svojinsko pravo</div>
+            <h3>Rešavanje spora oko graničnih označavanja</h3>
+            <p>
+              Kompleksan slučaj razgraničavanja zemljišta između susednih
+              parcela. Kroz detaljnu analizu katastarskih podataka i terenske
+              provere, ostvaren povoljn rezultat za klijenta.
+            </p>
+          </div>
+        </section>
+      </main>
 
       <footer class="footer">
-        <p>&copy; 2025 Advokat Marko Petrović. Sva prava zadržana.</p>
-        <p>Licenca Advokatske komore Srbije br. 4721</p>
+        <div class="footer-content">
+          <p><strong>Advokat Dejan Vasiljević</strong></p>
+          <p>Prvomajska 112, Zemun, Beograd</p>
+          <p>Telefon: 060 123 4567</p>
+          <p>
+            Mail:
+            <a href="mailto:vasiljevicdejan21@gmail.com"
+              >vasiljevicdejan21@gmail.com</a
+            >
+          </p>
+          <p class="footer-keywords">
+            Parnica · Krivično pravo · Radno pravo · Nekretnine · Naknada štete
+            · Porodično pravo
+          </p>
+        </div>
+
+        <div class="footer-map" aria-hidden="false">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.002400046881!2d20.382184406856407!3d44.84188447689922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65c396ad2067%3A0x4ddc45d7f5db11cc!2sPrvomajska%20112%2C%20Beograd%2011080!5e0!3m2!1sen!2srs!4v1760905845118!5m2!1sen!2srs"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </footer>
     </div>
   </body>

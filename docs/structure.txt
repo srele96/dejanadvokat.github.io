@@ -1,0 +1,10 @@
+| Page                            | Required? | Purpose                             |
+| ------------------------------- | --------- | ----------------------------------- |
+| `/`                             | ✅         | Homepage (overview, internal links) |
+| `/services`                     | ✅         | All services summarized             |
+| `/services/service1`–`serviceN` | ✅         | Dedicated keyword pages             |
+| `/about-me`                     | ✅         | Expertise / biography               |
+| `/contact`                      | ✅         | NAP + Google Map                    |
+| `/legal-notice`                 | ✅         | Legal compliance                    |
+| `/privacy-policy`               | ✅         | Legal compliance                    |
+| `/faq` or `/blog`               | Optional  | Helpful or educational content      |
