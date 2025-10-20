@@ -19,21 +19,18 @@
         <div
           class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
         >
-          <div
-            class="font-bold text-base text-black whitespace-nowrap flex items-center gap-2"
-          >
-            <i data-lucide="scale" class="w-5 h-5 text-black"></i>
+          <div class="font-bold text-base text-black whitespace-nowrap">
             Advokat Dejan Vasiljević
           </div>
 
           <!-- Mobile toggle -->
           <button
-            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold"
+            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold inline-flex items-center gap-2"
             aria-expanded="false"
             aria-controls="site-nav"
             aria-label="Otvori navigaciju"
           >
-            Meni
+            <i data-lucide="menu" class="w-5 h-5"></i>
           </button>
 
           <!-- Navigation -->
@@ -46,29 +43,33 @@
               <li class="border-t md:border-0">
                 <a
                   href="#hero"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Početna</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="home" class="w-4 h-4"></i
+                  ><span>Početna</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#services"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Oblasti delovanja</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="layers" class="w-4 h-4"></i
+                  ><span>Oblasti delovanja</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#cases"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Pravni predmeti</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="briefcase" class="w-4 h-4"></i
+                  ><span>Pravni predmeti</span></a
                 >
               </li>
               <li class="border-t md:border-0">
                 <a
                   href="#contact"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
-                  >Kontakt</a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  ><i data-lucide="phone" class="w-4 h-4"></i
+                  ><span>Kontakt</span></a
                 >
               </li>
             </ul>
@@ -97,16 +98,16 @@
                     pravnu sigurnost, poverenje i profesionalno zastupanje.
                   </p>
                 </div>
-                <ul class="space-y-1 text-gray-800">
+                <ul class="space-y-2 text-gray-800">
                   <li class="flex items-center gap-2">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-600"></i>
+                    <i data-lucide="map-pin" class="w-4 h-4 text-gray-700"></i>
                     <span
                       ><span class="font-semibold">Adresa:</span> Zemun,
                       Prvomajska 112</span
                     >
                   </li>
                   <li class="flex items-center gap-2">
-                    <i data-lucide="mail" class="w-4 h-4 text-gray-600"></i>
+                    <i data-lucide="mail" class="w-4 h-4 text-gray-700"></i>
                     <span
                       ><span class="font-semibold">Email:</span>
                       <span class="email-container"></span
@@ -138,12 +139,14 @@
 
         <section id="services" class="py-16 px-5 bg-gray-50">
           <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-8 flex items-center gap-2">
-              <i data-lucide="book" class="w-5 h-5"></i>
+            <h2
+              class="text-2xl font-semibold mb-6 border-b-2 border-black pb-2"
+            >
               Oblasti delovanja
             </h2>
-
-            <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 font-semibold">
+            <ul
+              class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-center font-semibold"
+            >
               <li
                 class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
               >
@@ -438,32 +441,23 @@
         <!-- CONTACT -->
         <section id="contact" class="py-16 px-5">
           <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <i data-lucide="phone" class="w-5 h-5"></i>
-              Kontakt
-            </h2>
-
+            <h2 class="text-2xl font-semibold mb-6">Kontakt</h2>
             <div class="grid md:grid-cols-[1.2fr_1fr] gap-6 items-start mt-4">
               <ul class="space-y-2">
-                <li class="flex items-center gap-2">
-                  <i data-lucide="map-pin" class="w-4 h-4 text-gray-400"></i>
-                  <strong>Adresa:</strong> Prvomajska 112, Zemun, Beograd
+                <li><strong>Adresa:</strong> Prvomajska 112, Zemun, Beograd</li>
+                <li>
+                  <strong>Email:</strong>
+                  <span class="email-container"></span>
                 </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="mail" class="w-4 h-4 text-gray-400"></i>
-                  <strong>Email:</strong> <span class="email-container"></span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <i data-lucide="map" class="w-4 h-4 text-gray-400"></i>
+                <li>
                   <strong>Lokacija:</strong>
                   <a
                     href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="text-blue-700 hover:underline"
+                    >Pronađite kancelariju na Google mapi</a
                   >
-                    Pronađite kancelariju na Google mapi
-                  </a>
                 </li>
               </ul>
               <div
@@ -509,9 +503,16 @@
           <div>
             <h3 class="font-bold text-lg mb-3">Kontakt i lokacija</h3>
             <ul class="space-y-2 text-sm text-white/80">
-              <li>Adresa: Prvomajska 112, Zemun, Beograd</li>
-              <li>Email: <span class="email-container"></span></li>
-              <li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4"></i
+                ><span>Adresa: Prvomajska 112, Zemun, Beograd</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i
+                ><span>Email: <span class="email-container"></span></span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
                 <a
                   class="text-white underline"
                   href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
@@ -532,7 +533,6 @@
     </div>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <script>
       (function obfuscateEmail() {
         const user = "vasiljevicdejan21";
@@ -591,10 +591,9 @@
           }
         });
       })();
-    </script>
-
-    <script>
-      lucide.createIcons();
+      if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
+      }
     </script>
   </body>
 </html>
