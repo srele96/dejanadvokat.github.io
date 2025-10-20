@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="sr" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,328 +8,95 @@
       name="description"
       content="Advokat Dejan Vasiljević iz Zemuna nudi pravno savetovanje i zastupanje u parnicama, krivičnim, radnim i privrednim sporovima. Kontaktirajte nas za pouzdanu pravnu pomoć."
     />
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #111;
-        background-color: #fff;
-      }
-
-      .page-wrapper {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(6px);
-        border-bottom: 1px solid #e0e0e0;
-      }
-
-      .header-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 20px;
-        position: relative;
-      }
-
-      .brand {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #000;
-      }
-
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-      }
-
-      nav a {
-        text-decoration: none;
-        font-size: 0.95rem;
-        font-weight: 600;
-        color: #333;
-        transition: color 0.2s ease-in-out;
-      }
-
-      nav a:hover {
-        color: #000;
-      }
-
-      /* Mobile nav toggle base (hidden on desktop) */
-      .nav-toggle {
-        display: none;
-        border: 1px solid #d0d0d0;
-        background: #fff;
-        color: #111;
-        padding: 8px 12px;
-        border-radius: 6px;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      main {
-        flex: 1;
-      }
-
-      section {
-        padding: 60px 20px;
-      }
-
-      .section-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-        margin-bottom: 12px;
-      }
-
-      h2 {
-        font-size: 1.6rem;
-        margin-bottom: 20px;
-      }
-
-      h3 {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-      }
-
-      p {
-        margin-bottom: 16px;
-      }
-
-      .hero {
-        background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
-      }
-
-      .hero .contact-list,
-      .contact-details {
-        list-style: none;
-        display: grid;
-        gap: 8px;
-        margin-top: 16px;
-      }
-
-      .hero .contact-list li span {
-        font-weight: 600;
-      }
-
-      .about-content {
-        display: grid;
-        gap: 24px;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        align-items: start;
-      }
-
-      .about-content img {
-        width: 100%;
-        border-radius: 10px;
-        border: 1px solid #ddd;
-      }
-
-      .motto {
-        font-style: italic;
-        font-size: 1.1rem;
-        margin-bottom: 16px;
-      }
-
-      .services-list {
-        list-style: none;
-        display: grid;
-        gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
-
-      .services-list li {
-        padding: 16px;
-        border: 1px solid #e5e5e5;
-        border-radius: 8px;
-        background-color: #fafafa;
-        font-weight: 600;
-        text-align: center;
-      }
-
-      .cases-grid {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      }
-
-      .case-card {
-        border: 1px solid #e5e5e5;
-        border-radius: 10px;
-        padding: 20px;
-        background-color: #fffdf8;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .case-category {
-        display: inline-block;
-        padding: 4px 10px;
-        margin-bottom: 10px;
-        border-radius: 999px;
-        background-color: #000;
-        color: #fff;
-        font-size: 0.75rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-
-      /* Contact map layout */
-      .contact-grid {
-        display: grid;
-        grid-template-columns: 1.2fr 1fr;
-        gap: 20px;
-        align-items: start;
-        margin-top: 16px;
-      }
-
-      .map-embed {
-        border: 1px solid #e5e5e5;
-        border-radius: 10px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .map-embed iframe {
-        width: 100%;
-        height: 280px;
-        display: block;
-        border: 0;
-      }
-
-      footer {
-        background-color: #000;
-        color: #fff;
-        padding: 40px 20px;
-      }
-
-      .footer-inner {
-        max-width: 1100px;
-        margin: 0 auto;
-        display: grid;
-        gap: 24px;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      }
-
-      .footer-heading {
-        font-size: 1.1rem;
-        margin-bottom: 12px;
-        font-weight: 700;
-      }
-
-      .footer-list {
-        list-style: none;
-        display: grid;
-        gap: 8px;
-      }
-
-      .footer-link,
-      .footer-contact a {
-        color: #fff;
-        text-decoration: none;
-      }
-
-      .footer-bottom {
-        margin-top: 32px;
-        text-align: center;
-        font-size: 0.85rem;
-        color: rgba(255, 255, 255, 0.7);
-      }
-
-      a[href^="#"] {
-        scroll-behavior: smooth;
-      }
-
-      @media (max-width: 720px) {
-        header {
-          border-bottom: 1px solid #ccc;
-        }
-
-        .nav-toggle {
-          display: inline-block;
-        }
-
-        /* Dropdown panel under header */
-        .header-inner nav {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          right: 0;
-          background: #fff;
-          border-bottom: 1px solid #e0e0e0;
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.06);
-          display: none;
-        }
-
-        header.open .header-inner nav {
-          display: block;
-        }
-
-        nav ul {
-          display: flex;
-          flex-direction: column;
-          gap: 0;
-        }
-
-        .header-inner nav a {
-          display: block;
-          padding: 12px 16px;
-          border-top: 1px solid #f0f0f0;
-        }
-
-        .contact-grid {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: {} } };
+    </script>
   </head>
-  <body>
-    <div class="page-wrapper">
-      <header>
-        <div class="header-inner">
-          <div class="brand">Advokat Dejan Vasiljević</div>
-          <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Otvori navigaciju">Meni</button>
-          <nav id="site-nav" aria-label="Glavna navigacija">
-            <ul>
-              <li><a href="#hero">Početna</a></li>
-              <li><a href="#about">O meni</a></li>
-              <li><a href="#services">Oblasti delovanja</a></li>
-              <li><a href="#cases">Pravni predmeti</a></li>
-              <li><a href="#contact">Kontakt</a></li>
+  <body class="text-gray-900 bg-white font-sans">
+    <div class="page-wrapper min-h-screen flex flex-col">
+      <header
+        class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200"
+      >
+        <div
+          class="header-inner max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
+        >
+          <div class="brand text-base font-extrabold text-black">
+            Advokat Dejan Vasiljević
+          </div>
+          <button
+            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Otvori navigaciju"
+          >
+            Meni
+          </button>
+          <nav
+            id="site-nav"
+            aria-label="Glavna navigacija"
+            class="hidden absolute inset-x-0 top-full bg-white border-b border-gray-200 shadow md:static md:block md:border-0 md:shadow-none"
+          >
+            <ul class="flex flex-col md:flex-row md:gap-5">
+              <li class="border-t md:border-0">
+                <a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
+                  href="#hero"
+                  >Početna</a
+                >
+              </li>
+              <li class="border-t md:border-0">
+                <a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
+                  href="#about"
+                  >O meni</a
+                >
+              </li>
+              <li class="border-t md:border-0">
+                <a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
+                  href="#services"
+                  >Oblasti delovanja</a
+                >
+              </li>
+              <li class="border-t md:border-0">
+                <a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
+                  href="#cases"
+                  >Pravni predmeti</a
+                >
+              </li>
+              <li class="border-t md:border-0">
+                <a
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black"
+                  href="#contact"
+                  >Kontakt</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <main>
-        <section id="hero" class="hero">
-          <div class="section-inner">
-            <h1>Advokat Dejan Vasiljević</h1>
-            <p>Pružanje profesionalnih pravnih usluga.</p>
-            <ul class="contact-list">
-              <li><span>Adresa:</span> Zemun, Prvomajska 112</li>
+      <main class="flex-1">
+        <section
+          id="hero"
+          class="hero bg-gradient-to-br from-gray-100 to-white py-12 md:py-16"
+        >
+          <div class="section-inner max-w-5xl mx-auto px-5">
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">
+              Advokat Dejan Vasiljević
+            </h1>
+            <p class="mb-4">Pružanje profesionalnih pravnih usluga.</p>
+            <ul class="contact-list mt-2 space-y-1">
               <li>
-                <span>Email:</span>
-                <a href="mailto:vasiljevicdejan21@gmail.com"
+                <span class="font-semibold">Adresa:</span> Zemun, Prvomajska 112
+              </li>
+              <li>
+                <span class="font-semibold">Email:</span>
+                <a
+                  class="text-blue-700 hover:underline"
+                  href="mailto:vasiljevicdejan21@gmail.com"
                   >vasiljevicdejan21@gmail.com</a
                 >
               </li>
@@ -337,157 +104,376 @@
           </div>
         </section>
 
-        <section id="about">
-          <div class="section-inner">
-            <h2>O meni</h2>
-            <div class="about-content">
+        <section id="about" class="py-14">
+          <div class="section-inner max-w-5xl mx-auto px-5">
+            <h2 class="text-2xl font-bold mb-5 border-b-2 border-black pb-2">
+              O meni
+            </h2>
+            <div class="about-content grid gap-6 md:grid-cols-2 items-start">
               <img
                 src="avatar.webp"
                 alt="Advokat Dejan Vasiljević"
                 width="360"
                 height="460"
+                class="w-full rounded-lg border border-gray-200"
               />
               <div>
-                <p class="motto">“Da mihi facta, dabo tibi ius”</p>
+                <p class="motto italic text-lg mb-3">
+                  “Da mihi facta, dabo tibi ius”
+                </p>
                 <p>
-                  Sa iskustvom u građanskom, krivičnom i
-                  privrednom pravu, pružam klijentima pravnu sigurnost,
-                  poverenje i profesionalno zastupanje.
+                  Sa iskustvom u građanskom, krivičnom i privrednom pravu,
+                  pružam klijentima pravnu sigurnost, poverenje i profesionalno
+                  zastupanje.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="services">
-          <div class="section-inner">
-            <h2>Oblasti delovanja</h2>
-            <ul class="services-list">
-              <li>Parnica</li>
-              <li>Nekretnine</li>
-              <li>Korporativno pravo</li>
-              <li>Krivično pravo</li>
-              <li>Radno pravo</li>
-              <li>Poresko pravo</li>
-              <li>Naknada štete</li>
-              <li>Porodično i nasledno pravo</li>
-              <li>Pravo intelektualne svojine i mediji</li>
-              <li>Privredno pravo</li>
-              <li>Naplata potraživanja i izvršenje</li>
+        <section id="services" class="py-14">
+          <div class="section-inner max-w-5xl mx-auto px-5">
+            <h2 class="text-2xl font-bold mb-5 border-b-2 border-black pb-2">
+              Oblasti delovanja
+            </h2>
+            <ul class="services-list grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Parnica
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Nekretnine
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Korporativno pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Krivično pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Radno pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Poresko pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Naknada štete
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Porodično i nasledno pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Pravo intelektualne svojine i mediji
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Privredno pravo
+              </li>
+              <li
+                class="p-4 border border-gray-200 rounded-lg bg-gray-50 font-semibold text-center"
+              >
+                Naplata potraživanja i izvršenje
+              </li>
             </ul>
           </div>
         </section>
 
-        <section id="cases">
-          <div class="section-inner">
-            <h2>Pravni predmeti</h2>
-            <div class="cases-grid">
-              <article class="case-card">
-                <div class="case-category">Parnica</div>
-                <h3>Parnica</h3>
-                <p>Zastupam stranke kroz sve faze parničnog postupka sa pažnjom.</p>
-                <p>Pripremam tužbe, odgovore i procesne predloge blagovremeno i temeljno.</p>
-                <p>Usmeravam strategiju spora uz realnu procenu rizika i troškova.</p>
+        <section id="cases" class="py-14">
+          <div class="section-inner max-w-5xl mx-auto px-5">
+            <h2 class="text-2xl font-bold mb-5 border-b-2 border-black pb-2">
+              Pravni predmeti
+            </h2>
+            <div class="cases-grid grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Parnica
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Parnica</h3>
+                <p class="mb-2">
+                  Zastupam stranke kroz sve faze parničnog postupka sa pažnjom.
+                </p>
+                <p class="mb-2">
+                  Pripremam tužbe, odgovore i procesne predloge blagovremeno i
+                  temeljno.
+                </p>
+                <p>
+                  Usmeravam strategiju spora uz realnu procenu rizika i
+                  troškova.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Nekretnine</div>
-                <h3>Nekretnine</h3>
-                <p>Sastavljam ugovore o kupoprodaji i regulaciji prava na nekretninama.</p>
-                <p>Proveravam terete, katastar i dokumentaciju pre zaključenja ugovora pažljivo.</p>
-                <p>Zastupam klijente u sporovima granica i smetanja poseda efikasno.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Nekretnine
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Nekretnine</h3>
+                <p>
+                  Sastavljam ugovore o kupoprodaji i regulaciji prava na
+                  nekretninama.
+                </p>
+                <p>
+                  Proveravam terete, katastar i dokumentaciju pre zaključenja
+                  ugovora pažljivo.
+                </p>
+                <p>
+                  Zastupam klijente u sporovima granica i smetanja poseda
+                  efikasno.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Korporativno pravo</div>
-                <h3>Korporativno pravo</h3>
-                <p>Osnivam privredna društva i pripremam interne akte i ugovore.</p>
-                <p>Savetujem uprave o usklađenosti i korporativnom upravljanju u praksi.</p>
-                <p>Vršim due diligence i pripremu transakcione dokumentacije za klijente.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Korporativno pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Korporativno pravo</h3>
+                <p>
+                  Osnivam privredna društva i pripremam interne akte i ugovore.
+                </p>
+                <p>
+                  Savetujem uprave o usklađenosti i korporativnom upravljanju u
+                  praksi.
+                </p>
+                <p>
+                  Vršim due diligence i pripremu transakcione dokumentacije za
+                  klijente.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Krivično pravo</div>
-                <h3>Krivično pravo</h3>
-                <p>Učestvujem od istrage do glavnog pretresa i žalbe aktivno.</p>
-                <p>Pripremam odbranu, prigovore i predloge procesnih radnji pravovremeno i.</p>
-                <p>Štitim prava okrivljenih uz poštovanje procesnih garancija i zakonitosti.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Krivično pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Krivično pravo</h3>
+                <p>
+                  Učestvujem od istrage do glavnog pretresa i žalbe aktivno.
+                </p>
+                <p>
+                  Pripremam odbranu, prigovore i predloge procesnih radnji
+                  pravovremeno i.
+                </p>
+                <p>
+                  Štitim prava okrivljenih uz poštovanje procesnih garancija i
+                  zakonitosti.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Radno pravo</div>
-                <h3>Radno pravo</h3>
-                <p>Zastupam radnike i poslodavce u radnim sporovima pred sudom.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Radno pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Radno pravo</h3>
+                <p>
+                  Zastupam radnike i poslodavce u radnim sporovima pred sudom.
+                </p>
                 <p>Sastavljam ugovore, anekse i pravilnike o radu u skladu.</p>
-                <p>Analiziram otkaze, mobing i isplate zaostalih zarada i doprinosa.</p>
+                <p>
+                  Analiziram otkaze, mobing i isplate zaostalih zarada i
+                  doprinosa.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Poresko pravo</div>
-                <h3>Poresko pravo</h3>
-                <p>Savetujem o poreskim obavezama i rizicima poslovanja klijenata redovno.</p>
-                <p>Pripremam prigovore, žalbe i mišljenja prema Poreskoj upravi pažljivo.</p>
-                <p>Pomažem u poreskom planiranju i preventivnoj usklađenosti sa propisima.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Poresko pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Poresko pravo</h3>
+                <p>
+                  Savetujem o poreskim obavezama i rizicima poslovanja klijenata
+                  redovno.
+                </p>
+                <p>
+                  Pripremam prigovore, žalbe i mišljenja prema Poreskoj upravi
+                  pažljivo.
+                </p>
+                <p>
+                  Pomažem u poreskom planiranju i preventivnoj usklađenosti sa
+                  propisima.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Naknada štete</div>
-                <h3>Naknada štete</h3>
-                <p>Procenjujem osnovanost zahteva i potrebnu medicinsku dokumentaciju detaljno i.</p>
-                <p>Vodim pregovore sa osiguravačima radi pravične nadoknade za klijente.</p>
-                <p>Zastupam u parnicama za imovinsku i nematerijalnu štetu efikasno.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Naknada štete
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Naknada štete</h3>
+                <p>
+                  Procenjujem osnovanost zahteva i potrebnu medicinsku
+                  dokumentaciju detaljno i.
+                </p>
+                <p>
+                  Vodim pregovore sa osiguravačima radi pravične nadoknade za
+                  klijente.
+                </p>
+                <p>
+                  Zastupam u parnicama za imovinsku i nematerijalnu štetu
+                  efikasno.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Porodično i nasledno pravo</div>
-                <h3>Porodično i nasledno pravo</h3>
-                <p>Vodim postupke razvoda, starateljstva i podele zajedničke imovine pažljivo.</p>
-                <p>Savetujem o izdržavanju, sporazumima i zaštiti interesa dece prioritetno.</p>
-                <p>Pripremam testamenta i rešavam naslednopravne nesuglasice mirnim putem kada.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Porodično i nasledno pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">
+                  Porodično i nasledno pravo
+                </h3>
+                <p>
+                  Vodim postupke razvoda, starateljstva i podele zajedničke
+                  imovine pažljivo.
+                </p>
+                <p>
+                  Savetujem o izdržavanju, sporazumima i zaštiti interesa dece
+                  prioritetno.
+                </p>
+                <p>
+                  Pripremam testamenta i rešavam naslednopravne nesuglasice
+                  mirnim putem kada.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Pravo intelektualne svojine i mediji</div>
-                <h3>Pravo intelektualne svojine i mediji</h3>
-                <p>Registrujem žigove, dizajne i štitim autorska prava u praksi.</p>
-                <p>Sastavljam licence, prenose prava i medijske ugovore za projekte.</p>
-                <p>Reagujem na povrede prava i postupke pred organima nadležnim.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Pravo intelektualne svojine i mediji
+                </div>
+                <h3 class="text-lg font-semibold mb-2">
+                  Pravo intelektualne svojine i mediji
+                </h3>
+                <p>
+                  Registrujem žigove, dizajne i štitim autorska prava u praksi.
+                </p>
+                <p>
+                  Sastavljam licence, prenose prava i medijske ugovore za
+                  projekte.
+                </p>
+                <p>
+                  Reagujem na povrede prava i postupke pred organima nadležnim.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Privredno pravo</div>
-                <h3>Privredno pravo</h3>
-                <p>Pregledam ugovore dobavljača, kupaca i dugoročne komercijalne sporazume pažljivo.</p>
-                <p>Savetujem o odgovornosti, rokovima i ugovornim obavezama i garancijama.</p>
-                <p>Pomažem u rešavanju sporova pregovorima i medijacijom gde moguće.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Privredno pravo
+                </div>
+                <h3 class="text-lg font-semibold mb-2">Privredno pravo</h3>
+                <p>
+                  Pregledam ugovore dobavljača, kupaca i dugoročne komercijalne
+                  sporazume pažljivo.
+                </p>
+                <p>
+                  Savetujem o odgovornosti, rokovima i ugovornim obavezama i
+                  garancijama.
+                </p>
+                <p>
+                  Pomažem u rešavanju sporova pregovorima i medijacijom gde
+                  moguće.
+                </p>
               </article>
 
-              <article class="case-card">
-                <div class="case-category">Naplata potraživanja i izvršenje</div>
-                <h3>Naplata potraživanja i izvršenje</h3>
-                <p>Sastavljam opomene, predloge za izvršenje i predloge obezbeđenja blagovremeno.</p>
-                <p>Vodim izvršne postupke i pratim naplatu po presudama dosledno.</p>
-                <p>Savetujem o rizicima naplate, troškovima i prioritetima poverilaca jasno.</p>
+              <article
+                class="case-card rounded-xl border border-gray-200 shadow-sm bg-amber-50 p-5"
+              >
+                <div
+                  class="case-category inline-block px-3 py-1 mb-2 rounded-full bg-black text-white text-xs tracking-wider uppercase"
+                >
+                  Naplata potraživanja i izvršenje
+                </div>
+                <h3 class="text-lg font-semibold mb-2">
+                  Naplata potraživanja i izvršenje
+                </h3>
+                <p>
+                  Sastavljam opomene, predloge za izvršenje i predloge
+                  obezbeđenja blagovremeno.
+                </p>
+                <p>
+                  Vodim izvršne postupke i pratim naplatu po presudama dosledno.
+                </p>
+                <p>
+                  Savetujem o rizicima naplate, troškovima i prioritetima
+                  poverilaca jasno.
+                </p>
               </article>
             </div>
           </div>
         </section>
 
-        <section id="contact">
-          <div class="section-inner">
-            <h2>Kontakt</h2>
-            <div class="contact-grid">
-              <ul class="contact-details">
+        <section id="contact" class="py-14">
+          <div class="section-inner max-w-5xl mx-auto px-5">
+            <h2 class="text-2xl font-bold mb-5 border-b-2 border-black pb-2">
+              Kontakt
+            </h2>
+            <div class="contact-grid grid md:grid-cols-2 gap-5 mt-4">
+              <ul class="contact-details space-y-2">
                 <li><strong>Adresa:</strong> Prvomajska 112, Zemun, Beograd</li>
                 <li>
                   <strong>Email:</strong>
-                  <a href="mailto:vasiljevicdejan21@gmail.com"
+                  <a
+                    class="text-blue-700 hover:underline"
+                    href="mailto:vasiljevicdejan21@gmail.com"
                     >vasiljevicdejan21@gmail.com</a
                   >
                 </li>
                 <li>
                   <strong>Lokacija:</strong>
                   <a
+                    class="text-blue-700 hover:underline"
                     href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -495,13 +481,17 @@
                   >
                 </li>
               </ul>
-              <div class="map-embed" aria-hidden="false">
+              <div
+                class="map-embed rounded-xl border border-gray-200 overflow-hidden shadow-sm"
+                aria-hidden="false"
+              >
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.002400046881!2d20.382184406856407!3d44.84188447689922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65c396ad2067%3A0x4ddc45d7f5db11cc!2sPrvomajska%20112%2C%20Beograd%2011080!5e0!3m2!1sen!2srs!4v1760905845118!5m2!1sen!2srs"
                   allowfullscreen=""
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
                   title="Mapa — Prvomajska 112, Beograd"
+                  class="w-full h-[280px] border-0"
                 ></iframe>
               </div>
             </div>
@@ -509,10 +499,14 @@
         </section>
       </main>
 
-      <footer>
-        <div class="footer-inner">
+      <footer class="bg-black text-white py-10">
+        <div
+          class="footer-inner max-w-5xl mx-auto px-5 grid gap-6 sm:grid-cols-2 md:grid-cols-3"
+        >
           <div>
-            <div class="footer-heading">Advokat Dejan Vasiljević</div>
+            <div class="footer-heading font-bold text-lg mb-3">
+              Advokat Dejan Vasiljević
+            </div>
             <p>
               Advokatska kancelarija specijalizovana za parnice, krivično,
               porodično i privredno pravo sa sedištem u Zemunu. Pružamo
@@ -520,8 +514,10 @@
             </p>
           </div>
           <div>
-            <div class="footer-heading">Pravne usluge</div>
-            <ul class="footer-list">
+            <div class="footer-heading font-bold text-lg mb-3">
+              Pravne usluge
+            </div>
+            <ul class="footer-list space-y-2">
               <li>Parnični postupci i naknada štete</li>
               <li>Krivična odbrana i privredni prekršaji</li>
               <li>Radno i privredno pravo</li>
@@ -530,18 +526,22 @@
             </ul>
           </div>
           <div class="footer-contact">
-            <div class="footer-heading">Kontakt i lokacija</div>
-            <ul class="footer-list">
+            <div class="footer-heading font-bold text-lg mb-3">
+              Kontakt i lokacija
+            </div>
+            <ul class="footer-list space-y-2">
               <li>Prvomajska 112, Zemun, Beograd</li>
               <li>
                 Email:
-                <a href="mailto:vasiljevicdejan21@gmail.com"
+                <a
+                  class="text-white underline"
+                  href="mailto:vasiljevicdejan21@gmail.com"
                   >vasiljevicdejan21@gmail.com</a
                 >
               </li>
               <li>
                 <a
-                  class="footer-link"
+                  class="footer-link text-white underline"
                   href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -551,29 +551,28 @@
             </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          © Advokatska kancelarija Dejan Vasiljević — Pravna zaštita i saveti
-          u Beogradu i širе okolini.
+        <div class="footer-bottom mt-8 text-center text-sm text-white/70">
+          © Advokatska kancelarija Dejan Vasiljević — Pravna zaštita i saveti u
+          Beogradu i širе okolini.
         </div>
       </footer>
     </div>
     <script>
       (function () {
-        var header = document.querySelector('header');
-        var btn = document.querySelector('.nav-toggle');
-        var nav = document.getElementById('site-nav');
-        if (!header || !btn || !nav) return;
+        var btn = document.querySelector(".nav-toggle");
+        var nav = document.getElementById("site-nav");
+        if (!btn || !nav) return;
 
-        btn.addEventListener('click', function () {
-          var isOpen = header.classList.toggle('open');
-          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        btn.addEventListener("click", function () {
+          var isHidden = nav.classList.contains("hidden");
+          nav.classList.toggle("hidden");
+          btn.setAttribute("aria-expanded", isHidden ? "true" : "false");
         });
 
-        // Close after clicking a link (mobile UX)
-        nav.addEventListener('click', function (e) {
-          if (e.target.tagName === 'A' && header.classList.contains('open')) {
-            header.classList.remove('open');
-            btn.setAttribute('aria-expanded', 'false');
+        nav.addEventListener("click", function (e) {
+          if (e.target.tagName === "A" && !nav.classList.contains("md:block")) {
+            if (!nav.classList.contains("hidden")) nav.classList.add("hidden");
+            btn.setAttribute("aria-expanded", "false");
           }
         });
       })();
