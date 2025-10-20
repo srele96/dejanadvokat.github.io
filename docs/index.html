@@ -14,22 +14,24 @@
   <body class="text-[#111] bg-white font-sans leading-relaxed">
     <div class="min-h-screen flex flex-col">
       <!-- HEADER -->
-      <header
-        class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200"
-      >
+      <header class="sticky top-0 z-50 bg-black text-white shadow-sm">
         <div
           class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
         >
           <div
-            class="font-bold text-base text-black whitespace-nowrap flex items-center gap-2"
+            class="font-bold text-base text-white whitespace-nowrap flex items-center gap-2"
           >
-            <img src="favicon.png" alt="Logo" class="w-6 h-6 rounded-sm" />
+            <img
+              src="favicon.png"
+              alt="Logo"
+              class="w-6 h-6 rounded-sm bg-white p-[2px] shadow-sm"
+            />
             <span>Advokat Dejan Vasiljević</span>
           </div>
 
           <!-- Mobile toggle -->
           <button
-            class="nav-toggle md:hidden border border-gray-300 bg-white text-gray-900 px-3 py-2 rounded-md font-bold inline-flex items-center gap-2"
+            class="nav-toggle md:hidden border border-white/30 bg-black text-white px-3 py-2 rounded-md font-bold inline-flex items-center gap-2"
             aria-expanded="false"
             aria-controls="site-nav"
             aria-label="Otvori navigaciju"
@@ -41,34 +43,34 @@
           <nav
             id="site-nav"
             aria-label="Glavna navigacija"
-            class="hidden absolute inset-x-0 top-full bg-white border-b border-gray-200 shadow md:static md:block md:border-0 md:shadow-none"
+            class="hidden absolute inset-x-0 top-full bg-black text-white border-t border-white/20 shadow-md md:static md:block md:border-0 md:shadow-none"
           >
-            <ul class="flex flex-col md:flex-row md:gap-5">
-              <li class="border-t md:border-0">
+            <ul class="flex flex-col md:flex-row md:gap-6">
+              <li class="border-t border-white/10 md:border-0">
                 <a
                   href="#hero"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Početna</span></a
                 >
               </li>
-              <li class="border-t md:border-0">
+              <li class="border-t border-white/10 md:border-0">
                 <a
                   href="#services"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Oblasti delovanja</span></a
                 >
               </li>
-              <li class="border-t md:border-0">
+              <li class="border-t border-white/10 md:border-0">
                 <a
                   href="#cases"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Pravni predmeti</span></a
                 >
               </li>
-              <li class="border-t md:border-0">
+              <li class="border-t border-white/10 md:border-0">
                 <a
                   href="#contact"
-                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-gray-700 hover:text-black flex items-center gap-2"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Kontakt</span></a
                 >
               </li>
