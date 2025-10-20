@@ -1,27 +1,11 @@
 {
-  "name": "dejanadvokat.github.io",
-  "version": "1.0.0",
-  "description": "```txt Kad otvorim na telefonu belo je i dole je crno ne znam u sta prvo da gledam,",
-  "main": "tailwind.config.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "name": "static-lawyer-website",
+  "description": "A static lawyer website.",
+  "version": "0.0.1",
   "scripts": {
     "build:css": "npx @tailwindcss/cli -i ./input.css -o ./docs/output.css --minify --content './docs/**/*.html'",
     "build:css:watch": "@tailwindcss/cli -i ./input.css -o ./docs/output.css --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/srele96/dejanadvokat.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/srele96/dejanadvokat.github.io/issues"
-  },
-  "homepage": "https://github.com/srele96/dejanadvokat.github.io#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.15",
     "tailwindcss": "^4.1.15"
