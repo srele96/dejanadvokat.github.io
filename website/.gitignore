@@ -7,5 +7,5 @@ _site
 .sass-cache
 
 # Bundler
-/vendor/
-/.bundle/
+vendor/
+.bundle/

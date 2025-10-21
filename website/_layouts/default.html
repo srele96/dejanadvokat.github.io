@@ -15,13 +15,17 @@
     <link
       rel="preload"
       as="image"
-      href="{{ '/avatar-516.webp' | relative_url }}"
-      imagesrcset="{{ '/avatar-352.webp' | relative_url }} 352w, {{ '/avatar-516.webp' | relative_url }} 516w, {{ '/avatar-600.webp' | relative_url }} 600w"
+      href="{{ '/assets/image/avatar-516.webp' | relative_url }}"
+      imagesrcset="{{ '/assets/image/avatar-352.webp' | relative_url }} 352w, {{ '/assets/image/avatar-516.webp' | relative_url }} 516w, {{ '/assets/image/avatar-600.webp' | relative_url }} 600w"
       imagesizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
     />
 
-    <link rel="preload" as="style" href="{{ '/output.css' | relative_url }}" />
-    <link rel="stylesheet" href="{{ '/output.css' | relative_url }}" />
+    <link
+      rel="preload"
+      as="style"
+      href="{{ '/assets/css/main.css' | relative_url }}"
+    />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
     {% if site.plugins contains 'jekyll-seo-tag' %}{% seo %}{% endif %}
   </head>
