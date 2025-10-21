@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'sr' }}" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}
+    </title>
+    <meta
+      name="description"
+      content="{{ page.description | default: site.description }}"
+    />
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="{{ '/avatar-516.webp' | relative_url }}"
+      imagesrcset="{{ '/avatar-352.webp' | relative_url }} 352w, {{ '/avatar-516.webp' | relative_url }} 516w, {{ '/avatar-600.webp' | relative_url }} 600w"
+      imagesizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
+    />
+
+    <link rel="preload" as="style" href="{{ '/output.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/output.css' | relative_url }}" />
+
+    {% if site.plugins contains 'jekyll-seo-tag' %}{% seo %}{% endif %}
+  </head>
+  <body class="text-[#111] bg-white font-sans leading-relaxed">
+    <div class="min-h-screen flex flex-col">
+      <!-- HEADER -->
+      <header class="sticky top-0 z-50 bg-black text-white shadow-sm">
+        <div
+          class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
+        >
+          <div
+            class="font-bold text-base text-white whitespace-nowrap flex items-center gap-2"
+          >
+            <img
+              src="{{ '/favicon.png' | relative_url }}"
+              alt="Logo"
+              class="w-6 h-6 rounded-sm bg-white p-[2px] shadow-sm"
+            />
+            <span>{{ site.title }}</span>
+          </div>
+
+          <!-- Mobile toggle -->
+          <button
+            class="nav-toggle md:hidden border border-white/30 bg-black text-white px-3 py-2 rounded-md font-bold inline-flex items-center gap-2"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Otvori navigaciju"
+          >
+            <i data-lucide="menu" class="w-5 h-5"></i>
+          </button>
+
+          <!-- Navigation -->
+          <nav
+            id="site-nav"
+            aria-label="Glavna navigacija"
+            class="hidden absolute inset-x-0 top-full bg-black text-white border-t border-white/20 shadow-md md:static md:block md:border-0 md:shadow-none"
+          >
+            <ul class="flex flex-col md:flex-row md:gap-6">
+              <li class="border-t border-white/10 md:border-0">
+                <a
+                  href="#hero"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
+                  ><span>Početna</span></a
+                >
+              </li>
+              <li class="border-t border-white/10 md:border-0">
+                <a
+                  href="#cases"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
+                  ><span>Pravni predmeti</span></a
+                >
+              </li>
+              <li class="border-t border-white/10 md:border-0">
+                <a
+                  href="#contact"
+                  class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
+                  ><span>Kontakt</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- MAIN CONTENT -->
+      <main class="flex-1">{{ content }}</main>
+
+      <!-- FOOTER -->
+      <footer class="bg-black text-white py-10">
+        <div
+          class="footer-inner max-w-5xl mx-auto px-5 grid gap-6 sm:grid-cols-2 md:grid-cols-3"
+        >
+          <div>
+            <h3 class="font-bold text-lg mb-3">{{ site.title }}</h3>
+            <p class="text-sm text-white/80 leading-relaxed">
+              Advokatska kancelarija specijalizovana za parnice, krivično,
+              porodično i privredno pravo sa sedištem u Zemunu. Pružamo
+              pravovremene i jasne pravne savete za fizička i pravna lica.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-3">Pravne usluge</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li>Parnični postupci i naknada štete</li>
+              <li>Krivična odbrana i privredni prekršaji</li>
+              <li>Radno i privredno pravo</li>
+              <li>Porodično pravo i zaštita dece</li>
+              <li>Kupovina, prodaja i sporovi oko nekretnina</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-3">Kontakt i lokacija</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li class="flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4"></i
+                ><span>Adresa: Prvomajska 112, Zemun, Beograd</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i
+                ><span>Email: <span class="email-container"></span></span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="external-link" class="w-4 h-4"></i>
+                <a
+                  class="text-white underline"
+                  href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Pronađite kancelariju na Google mapi</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-8 text-center text-xs text-white/70">
+          © Advokatska kancelarija Dejan Vasiljević — Pravna zaštita i saveti u
+          Beogradu i široj okolini.
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      (function obfuscateEmail() {
+        const user = "vasiljevicdejan21";
+        const domain = "gmail";
+        const tld = "com";
+        const email = `${user}@${domain}.${tld}`;
+        const mailto = `mailto:${email}`;
+        document.querySelectorAll(".email-container").forEach((el) => {
+          el.textContent = email;
+          el.setAttribute("data-email", email);
+          if (el.tagName.toLowerCase() === "a") {
+            el.href = mailto;
+          } else {
+            if (!el.querySelector || !el.querySelector("a")) {
+              const a = document.createElement("a");
+              a.href = mailto;
+              a.textContent = email;
+              a.className = "email text-blue-700 underline";
+              a.setAttribute("rel", "noopener noreferrer");
+              el.textContent = "";
+              el.appendChild(a);
+            }
+          }
+        });
+      })();
+    </script>
+
+    <script>
+      (function menuToggler() {
+        const btn = document.querySelector(".nav-toggle");
+        const nav = document.getElementById("site-nav");
+        if (!btn || !nav) return;
+        const mql = window.matchMedia("(min-width: 768px)");
+        let isOpen = false;
+        let locked = false;
+        let abortOutside;
+        function setAria(open) {
+          btn.setAttribute("aria-expanded", open ? "true" : "false");
+        }
+        function onOutsideClick(e) {
+          if (nav.contains(e.target) || btn.contains(e.target)) return;
+          toggle(false);
+        }
+        function addOutside() {
+          abortOutside = new AbortController();
+          document.addEventListener("click", onOutsideClick, {
+            signal: abortOutside.signal,
+          });
+        }
+        function removeOutside() {
+          if (abortOutside) abortOutside.abort();
+          abortOutside = null;
+        }
+        function toggle(open) {
+          if (isOpen === open) return;
+          isOpen = open;
+          if (isOpen) {
+            nav.classList.remove("hidden");
+            addOutside();
+          } else {
+            nav.classList.add("hidden");
+            removeOutside();
+          }
+          setAria(isOpen);
+        }
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (locked) return;
+          locked = true;
+          toggle(!isOpen);
+          setTimeout(() => (locked = false), 80);
+        });
+        nav.addEventListener("click", (e) => {
+          const a = e.target.closest("a");
+          if (!a) return;
+          if (!mql.matches) toggle(false);
+        });
+        mql.addEventListener("change", (ev) => {
+          if (ev.matches) {
+            removeOutside();
+            isOpen = false;
+            setAria(false);
+            nav.classList.add("hidden");
+          }
+        });
+        nav.classList.add("hidden");
+        setAria(false);
+      })();
+    </script>
+
+    <script>
+      if (window.lucide && typeof window.lucide.createIcons === "function") {
+        window.lucide.createIcons();
+      }
+    </script>
+  </body>
+</html>
