@@ -17,22 +17,6 @@ _Da mihi facta, dabo tibi ius_
 
 ---
 
-## Oblasti delovanja
-
-- Parnica
-- Nekretnine
-- Korporativno pravo
-- Krivično pravo
-- Radno pravo
-- Poresko pravo
-- Naknada štete
-- Porodično i nasledno pravo
-- Pravo intelektualne svojine i mediji
-- Privredno pravo
-- Naplata potraživanja i izvršenje
-
----
-
 ## Pravni predmeti
 
 ### Parnica
