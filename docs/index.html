@@ -333,120 +333,129 @@
       </footer>
     </div>
 
-    <script src="https://unpkg.com/lucide@0.546.0/dist/umd/lucide.min.js"></script>
-    <script>
-      (function obfuscateEmail() {
-        const user = "vasiljevicdejan21";
-        const domain = "gmail";
-        const tld = "com";
+    <script
+      src="https://unpkg.com/lucide@0.546.0/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        (function obfuscateEmail() {
+          const user = "vasiljevicdejan21";
+          const domain = "gmail";
+          const tld = "com";
 
-        const email = `${user}@${domain}.${tld}`;
-        const mailto = `mailto:${email}`;
+          const email = `${user}@${domain}.${tld}`;
+          const mailto = `mailto:${email}`;
 
-        document.querySelectorAll(".email-container").forEach((el) => {
-          el.textContent = email;
-          el.setAttribute("data-email", email);
+          document.querySelectorAll(".email-container").forEach((el) => {
+            el.textContent = email;
+            el.setAttribute("data-email", email);
 
-          if (el.tagName.toLowerCase() === "a") {
-            el.href = mailto;
-          } else {
-            if (!el.querySelector || !el.querySelector("a")) {
-              const a = document.createElement("a");
-              a.href = mailto;
-              a.textContent = email;
-              a.className = "email text-blue-700 underline";
-              a.setAttribute("rel", "noopener noreferrer");
-              el.textContent = "";
-              el.appendChild(a);
+            if (el.tagName.toLowerCase() === "a") {
+              el.href = mailto;
+            } else {
+              if (!el.querySelector || !el.querySelector("a")) {
+                const a = document.createElement("a");
+                a.href = mailto;
+                a.textContent = email;
+                a.className = "email text-blue-700 underline";
+                a.setAttribute("rel", "noopener noreferrer");
+                el.textContent = "";
+                el.appendChild(a);
+              }
             }
-          }
-        });
-      })();
-    </script>
-
-    <script>
-      (function menuToggler() {
-        const btn = document.querySelector(".nav-toggle");
-        const nav = document.getElementById("site-nav");
-        if (!btn || !nav) return;
-
-        const mql = window.matchMedia("(min-width: 768px)");
-        let isOpen = false;
-        let locked = false; // prevents double-toggles on rapid clicks
-        let abortOutside; // to remove outside-click listener when closed
-
-        function setAria(open) {
-          btn.setAttribute("aria-expanded", open ? "true" : "false");
-        }
-
-        function onOutsideClick(e) {
-          if (nav.contains(e.target) || btn.contains(e.target)) return;
-          toggle(false);
-        }
-
-        function addOutside() {
-          abortOutside = new AbortController();
-          document.addEventListener("click", onOutsideClick, {
-            signal: abortOutside.signal,
           });
-        }
-
-        function removeOutside() {
-          if (abortOutside) abortOutside.abort();
-          abortOutside = null;
-        }
-
-        function toggle(open) {
-          if (isOpen === open) return;
-          isOpen = open;
-          if (isOpen) {
-            nav.classList.remove("hidden");
-            addOutside();
-          } else {
-            nav.classList.add("hidden");
-            removeOutside();
-          }
-          setAria(isOpen);
-        }
-
-        // Button: guard against rapid/repeated clicks
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          if (locked) return;
-          locked = true;
-          toggle(!isOpen);
-          setTimeout(() => (locked = false), 80); // tiny lock to ignore double-fire
-        });
-
-        // Close when a menu link is clicked (mobile only)
-        nav.addEventListener("click", (e) => {
-          const a = e.target.closest("a");
-          if (!a) return;
-          if (!mql.matches) toggle(false);
-        });
-
-        // On resize to desktop: force open (shown via md:block), clean listeners
-        mql.addEventListener("change", (ev) => {
-          if (ev.matches) {
-            // ≥768px: keep menu visible (Tailwind md:block takes over), but clear state
-            removeOutside();
-            isOpen = false; // state irrelevant on desktop
-            setAria(false);
-            // Ensure hidden class is present so when we go back to mobile it starts closed
-            nav.classList.add("hidden");
-          }
-        });
-
-        // Initial: start closed on mobile, desktop handled by md:block
-        nav.classList.add("hidden");
-        setAria(false);
-      })();
+        })();
+      });
     </script>
 
-    <script>
-      if (window.lucide && typeof window.lucide.createIcons === "function") {
-        window.lucide.createIcons();
-      }
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        (function menuToggler() {
+          const btn = document.querySelector(".nav-toggle");
+          const nav = document.getElementById("site-nav");
+          if (!btn || !nav) return;
+
+          const mql = window.matchMedia("(min-width: 768px)");
+          let isOpen = false;
+          let locked = false; // prevents double-toggles on rapid clicks
+          let abortOutside; // to remove outside-click listener when closed
+
+          function setAria(open) {
+            btn.setAttribute("aria-expanded", open ? "true" : "false");
+          }
+
+          function onOutsideClick(e) {
+            if (nav.contains(e.target) || btn.contains(e.target)) return;
+            toggle(false);
+          }
+
+          function addOutside() {
+            abortOutside = new AbortController();
+            document.addEventListener("click", onOutsideClick, {
+              signal: abortOutside.signal,
+            });
+          }
+
+          function removeOutside() {
+            if (abortOutside) abortOutside.abort();
+            abortOutside = null;
+          }
+
+          function toggle(open) {
+            if (isOpen === open) return;
+            isOpen = open;
+            if (isOpen) {
+              nav.classList.remove("hidden");
+              addOutside();
+            } else {
+              nav.classList.add("hidden");
+              removeOutside();
+            }
+            setAria(isOpen);
+          }
+
+          // Button: guard against rapid/repeated clicks
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            if (locked) return;
+            locked = true;
+            toggle(!isOpen);
+            setTimeout(() => (locked = false), 80); // tiny lock to ignore double-fire
+          });
+
+          // Close when a menu link is clicked (mobile only)
+          nav.addEventListener("click", (e) => {
+            const a = e.target.closest("a");
+            if (!a) return;
+            if (!mql.matches) toggle(false);
+          });
+
+          // On resize to desktop: force open (shown via md:block), clean listeners
+          mql.addEventListener("change", (ev) => {
+            if (ev.matches) {
+              // ≥768px: keep menu visible (Tailwind md:block takes over), but clear state
+              removeOutside();
+              isOpen = false; // state irrelevant on desktop
+              setAria(false);
+              // Ensure hidden class is present so when we go back to mobile it starts closed
+              nav.classList.add("hidden");
+            }
+          });
+
+          // Initial: start closed on mobile, desktop handled by md:block
+          nav.classList.add("hidden");
+          setAria(false);
+        })();
+      });
+    </script>
+
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide && typeof window.lucide.createIcons === "function") {
+          window.lucide.createIcons();
+        }
+      });
     </script>
   </body>
 </html>
