@@ -24,6 +24,8 @@ npm run build:css:watch
 
 ### Google Search Console
 
+Email: <dejanadvokatbeograd@gmail.com>
+
 The project is registered in Google Search Console:
 
 <https://search.google.com/u/8/search-console?resource_id=https%3A%2F%2Fdejanadvokat.github.io%2F>
