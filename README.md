@@ -6,7 +6,7 @@ Description...
 
 - Unbuntu >= 24.04.x
 - Nodejs >= 25.x
-- Ruby >= 3.2.x
+- Ruby == 3.3.10
 
 Install the version managers for nodejs and ruby:
 
