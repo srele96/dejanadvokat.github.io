@@ -1,3 +1,5 @@
+ADD BUILD SCRIPTS FOR GITHUB PAGES
+
 CONTENT / UX FIXES:
 
 - Move description from `pravne usluge` from front page to /services cards
