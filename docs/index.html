@@ -35,14 +35,6 @@
       }
     </script>
     <link rel="icon" href="favicon.ico" />
-    <link
-      rel="preload"
-      as="image"
-      href="avatar-516.webp"
-      imagesrcset="avatar-352.webp 352w, avatar-516.webp 516w, avatar-600.webp 600w"
-      imagesizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
-    />
-    <link rel="preload" as="style" href="output.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="text-[#111] bg-white font-sans leading-relaxed">
@@ -52,7 +44,8 @@
         <div
           class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
         >
-          <div
+          <a
+            href="index.html"
             class="font-bold text-base text-white whitespace-nowrap flex items-center gap-2"
           >
             <img
@@ -61,7 +54,7 @@
               class="w-6 h-6 rounded-sm bg-white p-[2px] shadow-sm"
             />
             <span>Advokat Dejan Vasiljević</span>
-          </div>
+          </a>
 
           <!-- Mobile toggle -->
           <button
@@ -82,21 +75,21 @@
             <ul class="flex flex-col md:flex-row md:gap-6">
               <li class="border-t border-white/10 md:border-0">
                 <a
-                  href="#hero"
+                  href="index.html"
                   class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Početna</span></a
                 >
               </li>
               <li class="border-t border-white/10 md:border-0">
                 <a
-                  href="#services"
+                  href="services/index.html"
                   class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
-                  ><span>Oblasti delovanja</span></a
+                  ><span>Pravne usluge</span></a
                 >
               </li>
               <li class="border-t border-white/10 md:border-0">
                 <a
-                  href="#contact"
+                  href="contact.html"
                   class="block px-4 py-3 md:px-0 md:py-0 font-semibold text-white/80 hover:text-white flex items-center gap-2"
                   ><span>Kontakt</span></a
                 >
@@ -182,123 +175,210 @@
           </div>
         </section>
 
-        <section id="services" class="py-16 px-5 bg-gray-50">
+        <!-- SERVICES -->
+        <section id="services" class="py-16 px-5 bg-light-bg">
           <div class="max-w-5xl mx-auto">
-            <h2
-              class="text-2xl font-semibold mb-6 border-b-2 border-black pb-2"
-            >
-              Oblasti delovanja
-            </h2>
-            <ul
-              class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-center font-semibold"
-            >
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="landmark" class="w-5 h-5 text-gray-700"></i>
-                <span>Parnica</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="home" class="w-5 h-5 text-gray-700"></i>
-                <span>Nekretnine</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="building-2" class="w-5 h-5 text-gray-700"></i>
-                <span>Korporativno pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="shield" class="w-5 h-5 text-gray-700"></i>
-                <span>Krivično pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="briefcase" class="w-5 h-5 text-gray-700"></i>
-                <span>Radno pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="banknote" class="w-5 h-5 text-gray-700"></i>
-                <span>Poresko pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i
-                  data-lucide="circle-dollar-sign"
-                  class="w-5 h-5 text-gray-700"
-                ></i>
-                <span>Naknada štete</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="users" class="w-5 h-5 text-gray-700"></i>
-                <span>Porodično i nasledno pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="copyright" class="w-5 h-5 text-gray-700"></i>
-                <span>Pravo intelektualne svojine i mediji</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="factory" class="w-5 h-5 text-gray-700"></i>
-                <span>Privredno pravo</span>
-              </li>
-              <li
-                class="p-4 border border-gray-200 rounded-lg bg-gray-50 flex items-center justify-center gap-2"
-              >
-                <i data-lucide="file-check" class="w-5 h-5 text-gray-700"></i>
-                <span>Naplata potraživanja i izvršenje</span>
-              </li>
-            </ul>
-          </div>
-        </section>
+            <h2 class="text-2xl font-semibold mb-8">Pravni predmeti</h2>
 
-        <!-- CONTACT -->
-        <section id="contact" class="py-16 px-5">
-          <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-semibold mb-6">Kontakt</h2>
-            <div class="grid md:grid-cols-[1.2fr_1fr] gap-6 items-start mt-4">
-              <ul class="space-y-2">
-                <li><strong>Adresa:</strong> Prvomajska 112, Zemun, Beograd</li>
-                <li>
-                  <strong>Email:</strong>
-                  <span class="email-container"></span>
-                </li>
-                <li>
-                  <strong>Lokacija:</strong>
-                  <a
-                    href="https://www.google.com/maps/place/Prvomajska+112,+Beograd+11080"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-blue-700 hover:underline"
-                    >Pronađite kancelariju na Google mapi</a
-                  >
-                </li>
-              </ul>
-              <div
-                class="border border-gray-200 rounded-lg overflow-hidden shadow-sm"
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Parnica -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
               >
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.002400046881!2d20.382184406856407!3d44.84188447689922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a65c396ad2067%3A0x4ddc45d7f5db11cc!2sPrvomajska%20112%2C%20Beograd%2011080!5e0!3m2!1sen!2srs!4v1760905845118!5m2!1sen!2srs"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  title="Mapa — Prvomajska 112, Beograd"
-                  class="w-full h-72 border-0"
-                ></iframe>
-              </div>
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="landmark"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Parnica
+                </h3>
+                <p class="mb-2">
+                  Parnični postupci obuhvataju sve sudske sporove između
+                  fizičkih i pravnih lica. Pomažem klijentima u pripremi,
+                  vođenju i uspešnom okončanju parničnih postupaka, uz temeljnu
+                  pravnu strategiju i zastupanje pred sudovima.
+                </p>
+              </article>
+
+              <!-- Nekretnine -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="home"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Nekretnine
+                </h3>
+
+                <p class="mb-2">
+                  Savetujem i zastupam klijente u vezi sa kupoprodajom, zakonom
+                  o svojini, upisom prava u katastar, ugovorima o zakupu i
+                  sporovima oko granica i vlasništva.
+                </p>
+              </article>
+
+              <!-- Korporativno pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="building-2"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Korporativno pravo
+                </h3>
+                <p class="mb-2">
+                  Pružam pravnu podršku privrednim društvima u osnivanju,
+                  izmenama akata, vođenju poslovanja i rešavanju sporova između
+                  osnivača i partnera.
+                </p>
+              </article>
+
+              <!-- Krivično pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="shield"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Krivično pravo
+                </h3>
+                <p class="mb-2">
+                  Branim okrivljene u krivičnim i prekršajnim postupcima, pružam
+                  pravnu pomoć oštećenima i zastupam klijente u svim fazama
+                  krivičnog postupka.
+                </p>
+              </article>
+
+              <!-- Radno pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="briefcase"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Radno pravo
+                </h3>
+                <p class="mb-2">
+                  Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima
+                  iz radnog odnosa — od nezakonitog otkaza, mobinga i
+                  neisplaćenih zarada, do zaštite prava iz ugovora o radu.
+                </p>
+              </article>
+
+              <!-- Poresko pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="banknote"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Poresko pravo
+                </h3>
+                <p class="mb-2">
+                  Savetujem klijente u vezi sa porezima na dohodak, dobit,
+                  imovinu i nasledstvo. Zastupam u poreskim postupcima i
+                  sporovima pred Poreskom upravom.
+                </p>
+              </article>
+
+              <!-- Naknada štete -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="circle-dollar-sign"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Naknada štete
+                </h3>
+                <p class="mb-2">
+                  Zastupam u slučajevima saobraćajnih nezgoda, povreda na radu,
+                  medicinskih grešaka i drugih vidova materijalne i
+                  nematerijalne štete.
+                </p>
+              </article>
+
+              <!-- Porodično i nasledno pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="users"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Porodično i nasledno pravo
+                </h3>
+                <p class="mb-2">
+                  Pomažem u postupcima razvoda, poveravanja dece, alimentacije,
+                  utvrđivanja očinstva, starateljstva, deobe zajedničke imovine
+                  i naslednih sporova.
+                </p>
+              </article>
+
+              <!-- Pravo intelektualne svojine i mediji -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="copyright"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Pravo intelektualne svojine i mediji
+                </h3>
+                <p class="mb-2">
+                  Pružam zaštitu autorskih prava, žigova, patenata i medijskih
+                  sadržaja. Zastupam autore, firme i medije u sporovima o
+                  povredi prava intelektualne svojine.
+                </p>
+              </article>
+
+              <!-- Privredno pravo -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="factory"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Privredno pravo
+                </h3>
+                <p class="mb-2">
+                  Zastupam preduzetnike i kompanije u privrednim sporovima,
+                  naplati potraživanja, ugovornim odnosima i postupcima pred
+                  privrednim sudovima.
+                </p>
+              </article>
+
+              <!-- Naplata potraživanja i izvršenje -->
+              <article
+                class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+              >
+                <h3 class="text-lg font-semibold mb-2">
+                  <i
+                    data-lucide="file-check"
+                    class="inline-block w-5 h-5 align-middle"
+                  ></i>
+                  Naplata potraživanja i izvršenje
+                </h3>
+                <p class="mb-2">
+                  Pomažem klijentima da brzo i efikasno naplate svoja
+                  potraživanja, putem pregovora, sudskih i izvršnih postupaka.
+                </p>
+              </article>
             </div>
           </div>
         </section>
@@ -362,114 +442,7 @@
     </div>
 
     <script src="lucide-icons.js" defer></script>
-
-    <script>
-      (function obfuscateEmail() {
-        const user = "vasiljevicdejan21";
-        const domain = "gmail";
-        const tld = "com";
-
-        const email = `${user}@${domain}.${tld}`;
-        const mailto = `mailto:${email}`;
-
-        document.querySelectorAll(".email-container").forEach((el) => {
-          el.textContent = email;
-          el.setAttribute("data-email", email);
-
-          if (el.tagName.toLowerCase() === "a") {
-            el.href = mailto;
-          } else {
-            if (!el.querySelector || !el.querySelector("a")) {
-              const a = document.createElement("a");
-              a.href = mailto;
-              a.textContent = email;
-              a.className = "email text-blue-700 underline";
-              a.setAttribute("rel", "noopener noreferrer");
-              el.textContent = "";
-              el.appendChild(a);
-            }
-          }
-        });
-      })();
-    </script>
-
-    <script>
-      (function menuToggler() {
-        const btn = document.querySelector(".nav-toggle");
-        const nav = document.getElementById("site-nav");
-        if (!btn || !nav) return;
-
-        const mql = window.matchMedia("(min-width: 768px)");
-        let isOpen = false;
-        let locked = false; // prevents double-toggles on rapid clicks
-        let abortOutside; // to remove outside-click listener when closed
-
-        function setAria(open) {
-          btn.setAttribute("aria-expanded", open ? "true" : "false");
-        }
-
-        function onOutsideClick(e) {
-          if (nav.contains(e.target) || btn.contains(e.target)) return;
-          toggle(false);
-        }
-
-        function addOutside() {
-          abortOutside = new AbortController();
-          document.addEventListener("click", onOutsideClick, {
-            signal: abortOutside.signal,
-          });
-        }
-
-        function removeOutside() {
-          if (abortOutside) abortOutside.abort();
-          abortOutside = null;
-        }
-
-        function toggle(open) {
-          if (isOpen === open) return;
-          isOpen = open;
-          if (isOpen) {
-            nav.classList.remove("hidden");
-            addOutside();
-          } else {
-            nav.classList.add("hidden");
-            removeOutside();
-          }
-          setAria(isOpen);
-        }
-
-        // Button: guard against rapid/repeated clicks
-        btn.addEventListener("click", (e) => {
-          e.stopPropagation();
-          if (locked) return;
-          locked = true;
-          toggle(!isOpen);
-          setTimeout(() => (locked = false), 80); // tiny lock to ignore double-fire
-        });
-
-        // Close when a menu link is clicked (mobile only)
-        nav.addEventListener("click", (e) => {
-          const a = e.target.closest("a");
-          if (!a) return;
-          if (!mql.matches) toggle(false);
-        });
-
-        // On resize to desktop: force open (shown via md:block), clean listeners
-        mql.addEventListener("change", (ev) => {
-          if (ev.matches) {
-            // ≥768px: keep menu visible (Tailwind md:block takes over), but clear state
-            removeOutside();
-            isOpen = false; // state irrelevant on desktop
-            setAria(false);
-            // Ensure hidden class is present so when we go back to mobile it starts closed
-            nav.classList.add("hidden");
-          }
-        });
-
-        // Initial: start closed on mobile, desktop handled by md:block
-        nav.classList.add("hidden");
-        setAria(false);
-      })();
-    </script>
+    <script src="obfuscateEmail.js"></script>
+    <script src="menuToggler.js"></script>
   </body>
 </html>
