@@ -1,6 +1,6 @@
 # Pravne usluge — Advokat Dejan Vasiljević, Zemun
 
-U nastavku su detaljno predstavljene sve oblasti pravnog delovanja advokatske kancelarije Dejan Vasiljević. Svaka oblast sadrži kratak uvod i strukturisan prikaz glavnih faza postupka. Klijenti dobijaju pomoc da efikasno i profesionalno reše svoj pravni problem.
+U nastavku su detaljno predstavljene sve oblasti pravnog delovanja advokatske kancelarije Dejan Vasiljević. Svaka oblast sadrži kratak uvod i strukturisan prikaz glavnih faza postupka. klijenti dobijaju pomoc da efikasno i profesionalno reše svoj pravni problem.
 
 ---
 
@@ -246,7 +246,7 @@ Na ovaj način klijent dobija punu pravnu zaštitu i izbegava finansijske i repu
 
 ---
 
-## Pravo intelektualne svojine i mediji
+## Intelektualna svojina
 
 Pružam zaštitu autorskih prava, žigova, patenata i medijskih sadržaja. Zastupam autore, firme i medije u sporovima o povredi prava intelektualne svojine.
 
@@ -272,7 +272,7 @@ Cilj je da svako delo bude pravno zaštićeno, a autor siguran da njegovo stvara
 
 ---
 
-## Naplata potraživanja i izvršenje
+## Izvršenje i naplata
 
 Pomažem klijentima da brzo i efikasno naplate svoja potraživanja, putem pregovora, sudskih i izvršnih postupaka.
 

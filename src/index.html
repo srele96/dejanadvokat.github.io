@@ -113,201 +113,29 @@ description: Pružanje profesionalnih pravnih usluga. Advokatska kancelarija Vas
       <h2 class="text-2xl font-semibold mb-8">Pravne usluge</h2>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Parnica -->
+        {% for service in site.data.services %}
         <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+          class="flex border border-gray-200 rounded-lg bg-white shadow-sm"
         >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="landmark"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Parnica
-          </h3>
-          <p class="mb-2">
-            Parnični postupci obuhvataju sve sudske sporove između fizičkih i
-            pravnih lica. Pomažem klijentima u pripremi, vođenju i uspešnom
-            okončanju parničnih postupaka, uz temeljnu pravnu strategiju i
-            zastupanje pred sudovima.
-          </p>
+          <a
+            href="/services/{{ service.slug }}"
+            class="group flex flex-col justify-between p-5 w-full h-full focus:outline-none focus:ring-2 focus:ring-blue-700 rounded-lg"
+          >
+            <div>
+              <h3
+                class="text-lg font-semibold mb-2 group-hover:text-blue-700 transition"
+              >
+                <i
+                  data-lucide="{{ service.icon }}"
+                  class="inline-block w-5 h-5 align-middle text-gray-700"
+                ></i>
+                {{ service.title }}
+              </h3>
+              <p class="mb-2 text-gray-700">{{ service.briefFront }}</p>
+            </div>
+          </a>
         </article>
-
-        <!-- Nekretnine -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i data-lucide="home" class="inline-block w-5 h-5 align-middle"></i>
-            Nekretnine
-          </h3>
-
-          <p class="mb-2">
-            Savetujem i zastupam klijente u vezi sa kupoprodajom, zakonom o
-            svojini, upisom prava u katastar, ugovorima o zakupu i sporovima oko
-            granica i vlasništva.
-          </p>
-        </article>
-
-        <!-- Korporativno pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="building-2"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Korporativno pravo
-          </h3>
-          <p class="mb-2">
-            Pružam pravnu podršku privrednim društvima u osnivanju, izmenama
-            akata, vođenju poslovanja i rešavanju sporova između osnivača i
-            partnera.
-          </p>
-        </article>
-
-        <!-- Krivično pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="shield"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Krivično pravo
-          </h3>
-          <p class="mb-2">
-            Branim okrivljene u krivičnim i prekršajnim postupcima, pružam
-            pravnu pomoć oštećenima i zastupam klijente u svim fazama krivičnog
-            postupka.
-          </p>
-        </article>
-
-        <!-- Radno pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="briefcase"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Radno pravo
-          </h3>
-          <p class="mb-2">
-            Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima iz
-            radnog odnosa — od nezakonitog otkaza, mobinga i neisplaćenih
-            zarada, do zaštite prava iz ugovora o radu.
-          </p>
-        </article>
-
-        <!-- Poresko pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="banknote"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Poresko pravo
-          </h3>
-          <p class="mb-2">
-            Savetujem klijente u vezi sa porezima na dohodak, dobit, imovinu i
-            nasledstvo. Zastupam u poreskim postupcima i sporovima pred Poreskom
-            upravom.
-          </p>
-        </article>
-
-        <!-- Naknada štete -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="circle-dollar-sign"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Naknada štete
-          </h3>
-          <p class="mb-2">
-            Zastupam u slučajevima saobraćajnih nezgoda, povreda na radu,
-            medicinskih grešaka i drugih vidova materijalne i nematerijalne
-            štete.
-          </p>
-        </article>
-
-        <!-- Porodično i nasledno pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="users"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Porodično i nasledno pravo
-          </h3>
-          <p class="mb-2">
-            Pomažem u postupcima razvoda, poveravanja dece, alimentacije,
-            utvrđivanja očinstva, starateljstva, deobe zajedničke imovine i
-            naslednih sporova.
-          </p>
-        </article>
-
-        <!-- Pravo intelektualne svojine i mediji -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="copyright"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Pravo intelektualne svojine i mediji
-          </h3>
-          <p class="mb-2">
-            Pružam zaštitu autorskih prava, žigova, patenata i medijskih
-            sadržaja. Zastupam autore, firme i medije u sporovima o povredi
-            prava intelektualne svojine.
-          </p>
-        </article>
-
-        <!-- Privredno pravo -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="factory"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Privredno pravo
-          </h3>
-          <p class="mb-2">
-            Zastupam preduzetnike i kompanije u privrednim sporovima, naplati
-            potraživanja, ugovornim odnosima i postupcima pred privrednim
-            sudovima.
-          </p>
-        </article>
-
-        <!-- Naplata potraživanja i izvršenje -->
-        <article
-          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
-        >
-          <h3 class="text-lg font-semibold mb-2">
-            <i
-              data-lucide="file-check"
-              class="inline-block w-5 h-5 align-middle"
-            ></i>
-            Naplata potraživanja i izvršenje
-          </h3>
-          <p class="mb-2">
-            Pomažem klijentima da brzo i efikasno naplate svoja potraživanja,
-            putem pregovora, sudskih i izvršnih postupaka.
-          </p>
-        </article>
+        {% endfor %}
       </div>
     </div>
   </section>
