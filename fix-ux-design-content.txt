@@ -1,0 +1,18 @@
+CONTENT / UX FIXES:
+
+- Move description from `pravne usluge` from front page to /services cards
+- Remove short descriptions from /services cards
+- Remove 'Advokat Dejan Vasiljević' from title in every /services/:slug
+
+MENU FIXES:
+
+- Make menu /services dropdown on hover & click (services) takes user to the services page
+
+MOTIVATION:
+
+- Add section how long has been working as a lawyer
+- Add section what made lawyer do the job
+- Add section how many satisfied clients
+- Trust results from clients, how many returning clients
+- Motivation for doing the lawyer job
+- Passion for doing the lawyer job
