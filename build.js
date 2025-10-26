@@ -2,12 +2,12 @@ const esbuild = require("esbuild");
 
 async function main() {
   const ctx = await esbuild.context({
-    entryPoints: ["./lucide-icons.js"],
+    entryPoints: ["./lucideIcons.js"],
     bundle: true,
-    outfile: "docs/lucide-icons.js",
+    outfile: "src/assets/js/lucideIcons.js",
     format: "esm",
     target: ["es2020"],
-    minify: true, // easier to debug while watching
+    minify: true,
     sourcemap: false,
     treeShaking: true,
     platform: "browser",

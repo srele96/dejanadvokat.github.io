@@ -18,9 +18,7 @@ Install `rvm` <https://rvm.io/>
 
 ## Docs
 
-```bash
-cd jekyll
-```
+**_It is conventional to keep Gemfile in the root._**
 
 Setup local bundle path to avoid installing gems globally:
 

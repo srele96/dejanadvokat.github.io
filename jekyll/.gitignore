@@ -1,9 +1,0 @@
-# Jekyll
-.bundle
-vendor
-.jekyll-cache
-_site
-
-# Node
-
-node_modules
