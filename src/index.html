@@ -1,39 +1,314 @@
 ---
-layout: null
+layout: default
+title: Advokat Dejan Vasiljević | Pravni saveti i zastupanje
+description: Pružanje profesionalnih pravnih usluga. Advokatska kancelarija Vasiljević Dejan pruža klijentima pravnu sigurnost, poverenje i profesionalno zastupanje.
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/input.css' | relative_url }}"
-    />
-    <script src="assets/js/lucideIcons.js"></script>
-  </head>
-  <body>
-    <header class="sticky top-0 z-50 bg-black text-white shadow-sm">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": "https://dejanadvokat.github.io/",
+    "name": "Advokat Dejan Vasiljević",
+    "image": "https://dejanadvokat.github.io/assets/image/avatar-516.webp",
+    "url": "https://dejanadvokat.github.io/",
+    "logo": "https://dejanadvokat.github.io/favicon.png",
+    "description": "Pružanje profesionalnih pravnih usluga. Advokatska kancelarija Vasiljević Dejan pruža klijentima pravnu sigurnost, poverenje i profesionalno zastupanje.",
+    "email": "vasiljevicdejan21@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Prvomajska 112",
+      "addressLocality": "Zemun",
+      "addressRegion": "Beograd",
+      "postalCode": "11080",
+      "addressCountry": "RS"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 44.8427137,
+      "longitude": 20.3809345
+    }
+  }
+</script>
+
+<!-- MAIN CONTENT -->
+<main class="flex-1">
+  <section
+    id="hero"
+    class="bg-gradient-to-br from-[#f5f7fa] to-white py-16 px-5"
+  >
+    <div class="max-w-5xl mx-auto">
       <div
-        class="max-w-5xl mx-auto px-5 py-4 flex items-center justify-between relative"
+        class="grid gap-10 md:grid-cols-[1fr_1.1fr] items-start md:items-center"
       >
-        <a
-          href="index.html"
-          class="font-bold text-base text-white whitespace-nowrap flex items-center gap-2"
+        <!-- Left: Title & Contact -->
+        <div class="space-y-4">
+          <div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-3">
+              Advokat Dejan Vasiljević
+            </h1>
+            <p class="mb-4 text-gray-800">
+              Pružanje profesionalnih pravnih usluga. Advokatska kancelarija
+              Vasiljević Dejan pruža klijentima pravnu sigurnost, poverenje i
+              profesionalno zastupanje.
+            </p>
+          </div>
+          <ul class="space-y-2 text-gray-800">
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gray-700"></i>
+              <span
+                ><span class="font-semibold">Adresa:</span> Zemun, Prvomajska
+                112</span
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="mail" class="w-4 h-4 text-gray-700"></i>
+              <span
+                ><span class="font-semibold">Email:</span>
+                <span class="email-container"></span
+              ></span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Photo & Motto -->
+        <div
+          class="flex flex-col sm:flex-row md:flex-col gap-6 items-center md:items-start"
         >
-          <img
-            src="favicon.png"
-            alt="Logo"
-            class="w-6 h-6 rounded-sm bg-white p-[2px] shadow-sm"
-          />
-          <span>Advokat Dejan Vasiljević</span>
-        </a>
+          <picture>
+            <source
+              srcset="
+                assets/image/avatar-352.webp 352w,
+                assets/image/avatar-516.webp 516w,
+                assets/image/avatar-600.webp 600w
+              "
+              type="image/webp"
+            />
+            <img
+              src="assets/image/avatar-516.webp"
+              alt="Advokat Dejan Vasiljević"
+              width="600"
+              height="397"
+              class="rounded-lg border border-gray-300 w-full md:w-full object-cover"
+              loading="eager"
+              fetchpriority="high"
+              sizes="(max-width: 640px) 600px, (max-width: 768px) 352px, 516px"
+            />
+          </picture>
+          <div class="w-full flex justify-center">
+            <p
+              class="italic font-serif text-gray-700 text-lg sm:text-xl md:text-xl lg:text-2xl text-center leading-snug tracking-wide max-w-md"
+            >
+              Da mihi facta, dabo tibi ius
+            </p>
+          </div>
+        </div>
       </div>
-    </header>
-    <h1 class="text-3xl text-red-500 font-bold text-center bg-yellow-200 p-10">
-      Hello Tailwind
-    </h1>
-  </body>
-</html>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-16 px-5 bg-light-bg">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-8">Pravni predmeti</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Parnica -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="landmark"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Parnica
+          </h3>
+          <p class="mb-2">
+            Parnični postupci obuhvataju sve sudske sporove između fizičkih i
+            pravnih lica. Pomažem klijentima u pripremi, vođenju i uspešnom
+            okončanju parničnih postupaka, uz temeljnu pravnu strategiju i
+            zastupanje pred sudovima.
+          </p>
+        </article>
+
+        <!-- Nekretnine -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i data-lucide="home" class="inline-block w-5 h-5 align-middle"></i>
+            Nekretnine
+          </h3>
+
+          <p class="mb-2">
+            Savetujem i zastupam klijente u vezi sa kupoprodajom, zakonom o
+            svojini, upisom prava u katastar, ugovorima o zakupu i sporovima oko
+            granica i vlasništva.
+          </p>
+        </article>
+
+        <!-- Korporativno pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="building-2"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Korporativno pravo
+          </h3>
+          <p class="mb-2">
+            Pružam pravnu podršku privrednim društvima u osnivanju, izmenama
+            akata, vođenju poslovanja i rešavanju sporova između osnivača i
+            partnera.
+          </p>
+        </article>
+
+        <!-- Krivično pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="shield"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Krivično pravo
+          </h3>
+          <p class="mb-2">
+            Branim okrivljene u krivičnim i prekršajnim postupcima, pružam
+            pravnu pomoć oštećenima i zastupam klijente u svim fazama krivičnog
+            postupka.
+          </p>
+        </article>
+
+        <!-- Radno pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="briefcase"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Radno pravo
+          </h3>
+          <p class="mb-2">
+            Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima iz
+            radnog odnosa — od nezakonitog otkaza, mobinga i neisplaćenih
+            zarada, do zaštite prava iz ugovora o radu.
+          </p>
+        </article>
+
+        <!-- Poresko pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="banknote"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Poresko pravo
+          </h3>
+          <p class="mb-2">
+            Savetujem klijente u vezi sa porezima na dohodak, dobit, imovinu i
+            nasledstvo. Zastupam u poreskim postupcima i sporovima pred Poreskom
+            upravom.
+          </p>
+        </article>
+
+        <!-- Naknada štete -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="circle-dollar-sign"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Naknada štete
+          </h3>
+          <p class="mb-2">
+            Zastupam u slučajevima saobraćajnih nezgoda, povreda na radu,
+            medicinskih grešaka i drugih vidova materijalne i nematerijalne
+            štete.
+          </p>
+        </article>
+
+        <!-- Porodično i nasledno pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="users"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Porodično i nasledno pravo
+          </h3>
+          <p class="mb-2">
+            Pomažem u postupcima razvoda, poveravanja dece, alimentacije,
+            utvrđivanja očinstva, starateljstva, deobe zajedničke imovine i
+            naslednih sporova.
+          </p>
+        </article>
+
+        <!-- Pravo intelektualne svojine i mediji -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="copyright"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Pravo intelektualne svojine i mediji
+          </h3>
+          <p class="mb-2">
+            Pružam zaštitu autorskih prava, žigova, patenata i medijskih
+            sadržaja. Zastupam autore, firme i medije u sporovima o povredi
+            prava intelektualne svojine.
+          </p>
+        </article>
+
+        <!-- Privredno pravo -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="factory"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Privredno pravo
+          </h3>
+          <p class="mb-2">
+            Zastupam preduzetnike i kompanije u privrednim sporovima, naplati
+            potraživanja, ugovornim odnosima i postupcima pred privrednim
+            sudovima.
+          </p>
+        </article>
+
+        <!-- Naplata potraživanja i izvršenje -->
+        <article
+          class="border border-gray-200 rounded-lg p-5 bg-white shadow-sm"
+        >
+          <h3 class="text-lg font-semibold mb-2">
+            <i
+              data-lucide="file-check"
+              class="inline-block w-5 h-5 align-middle"
+            ></i>
+            Naplata potraživanja i izvršenje
+          </h3>
+          <p class="mb-2">
+            Pomažem klijentima da brzo i efikasno naplate svoja potraživanja,
+            putem pregovora, sudskih i izvršnih postupaka.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
