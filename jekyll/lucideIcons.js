@@ -1,0 +1,40 @@
+import {
+  Menu,
+  MapPin,
+  Mail,
+  Landmark,
+  Home,
+  Building2,
+  Shield,
+  Briefcase,
+  Banknote,
+  CircleDollarSign,
+  Users,
+  Copyright,
+  Factory,
+  FileCheck,
+  ExternalLink,
+  Clock,
+  createIcons,
+} from "lucide";
+
+createIcons({
+  icons: {
+    Menu,
+    MapPin,
+    Mail,
+    Landmark,
+    Home,
+    Building2,
+    Shield,
+    Briefcase,
+    Banknote,
+    CircleDollarSign,
+    Users,
+    Copyright,
+    Factory,
+    FileCheck,
+    ExternalLink,
+    Clock
+  },
+});

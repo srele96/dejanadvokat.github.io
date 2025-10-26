@@ -1,0 +1,17 @@
+# Avoid using `include` and `exclude` on config files in this folder.
+source: "src"
+
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-postcss-v2
+
+# https://github.com/bglw/jekyll-postcss-v2/tree/main
+# Changing source directory requires us to adjust the postcss plugin
+# expected configuration.
+postcss:
+  script: ../node_modules/.bin/postcss
+  config: ../postcss.config.js
