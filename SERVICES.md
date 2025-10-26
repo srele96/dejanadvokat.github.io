@@ -1,6 +1,6 @@
 # Pravne usluge — Advokat Dejan Vasiljević, Zemun
 
-U nastavku su detaljno predstavljene sve oblasti pravnog delovanja advokatske kancelarije Dejan Vasiljević. Svaka oblast sadrži kratak uvod i strukturisan prikaz glavnih faza postupka i načina na koji pomažem klijentima da efikasno i profesionalno reše svoj pravni problem.
+U nastavku su detaljno predstavljene sve oblasti pravnog delovanja advokatske kancelarije Dejan Vasiljević. Svaka oblast sadrži kratak uvod i strukturisan prikaz glavnih faza postupka. Klijenti dobijaju pomoc da efikasno i profesionalno reše svoj pravni problem.
 
 ---
 
