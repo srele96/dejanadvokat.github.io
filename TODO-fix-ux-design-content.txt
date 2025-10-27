@@ -18,3 +18,11 @@ MOTIVATION:
 - Trust results from clients, how many returning clients
 - Motivation for doing the lawyer job
 - Passion for doing the lawyer job
+
+SERVICES
+
+IS THE STRUCTURE FOR THE LIST SEMANTICALLY CORRECT?
+
+<li>
+  <h3>
+  <p>

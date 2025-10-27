@@ -17,6 +17,9 @@ import {
   Clock,
   createIcons,
   ArrowLeft,
+  X,
+  ArrowRight,
+  ArrowDown,
 } from "lucide";
 
 createIcons({
@@ -37,6 +40,9 @@ createIcons({
     FileCheck,
     ExternalLink,
     Clock,
-    ArrowLeft
+    ArrowLeft,
+    X,
+    ArrowRight,
+    ArrowDown,
   },
 });
