@@ -26,3 +26,7 @@ IS THE STRUCTURE FOR THE LIST SEMANTICALLY CORRECT?
 <li>
   <h3>
   <p>
+
+CHANGE briefServices and briefFront
+
+FIX THE DROPDOWN MENU TO ENUMERATE SERVICES FROM _data/services.yml
