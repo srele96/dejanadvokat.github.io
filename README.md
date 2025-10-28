@@ -68,6 +68,12 @@ The prod bulid:
 node build.prod.js
 ```
 
+It is mandatory to explicitly set JEKYLL_ENV to run the build script:
+
+```bash
+JEKYLL_ENV=production ./build-site.sh
+```
+
 This is useful if server serves the site directory from a subpath (e.g. example.com/blog). Build for production with baseurl prefix:
 
 ```bash
