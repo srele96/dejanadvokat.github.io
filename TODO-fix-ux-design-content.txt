@@ -7,8 +7,4 @@ MOTIVATION:
 - Motivation for doing the lawyer job
 - Passion for doing the lawyer job
 
-ADD BUILD SCRIPTS FOR GITHUB PAGES
-
-We have to build the jekyll from github actions.
-
 FREEZE DEV ENVIRONMENT USING DOCKER IMAGE
