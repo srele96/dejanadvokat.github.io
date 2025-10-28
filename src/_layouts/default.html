@@ -20,7 +20,7 @@
         >
           <!-- Logo -->
           <a
-            href="/"
+            href="{{ '/' | relative_url }}"
             class="font-bold text-base text-white whitespace-nowrap flex items-center gap-2"
           >
             <img
@@ -45,10 +45,10 @@
           <!-- Desktop Menu -->
           <nav class="hidden md:flex items-center gap-6">
             <ul class="flex items-center gap-6">
-              <li><a href="/" class="hover:text-gray-300">Početna</a></li>
+              <li><a href="{{ '/' | relative_url }}" class="hover:text-gray-300">Početna</a></li>
               <li class="relative group">
                 <a
-                  href="/services"
+                  href="{{ '/services' | relative_url }}"
                   class="hover:text-gray-300 inline-flex items-center gap-1"
                 >
                   Pravne usluge <i data-lucide="arrow-down" class="w-4 h-4"></i>
@@ -58,8 +58,9 @@
                 >
                   {% for service in site.data.services %}
                   <li>
+                    {% assign service_path = '/services/' | append: service.slug %}
                     <a
-                      href="/services/{{ service.slug }}"
+                      href="{{ service_path | relative_url }}"
                       class="block px-3 py-2 hover:bg-white/10 rounded"
                       >{{ service.title }}</a
                     >
@@ -68,7 +69,7 @@
                 </ul>
               </li>
               <li>
-                <a href="/contact" class="hover:text-gray-300">Kontakt</a>
+                <a href="{{ '/contact' | relative_url }}" class="hover:text-gray-300">Kontakt</a>
               </li>
             </ul>
           </nav>
@@ -90,7 +91,7 @@
 
             <ul class="flex flex-col gap-6">
               <li>
-                <a href="/" class="text-lg font-semibold hover:text-gray-300"
+                <a href="{{ '/' | relative_url }}" class="text-lg font-semibold hover:text-gray-300"
                   >Početna</a
                 >
               </li>
@@ -105,7 +106,7 @@
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="{{ '/contact' | relative_url }}"
                   class="text-lg font-semibold hover:text-gray-300"
                   >Kontakt</a
                 >
@@ -125,7 +126,7 @@
               <i data-lucide="arrow-left" class="w-5 h-5"></i> Nazad
             </button>
             <a
-              href="/services"
+              href="{{ '/services' | relative_url }}"
               class="text-xl font-bold mb-2 hover:text-gray-300"
               >Pravne usluge</a
             >
@@ -133,8 +134,9 @@
             <ul class="flex flex-col gap-3">
               {% for service in site.data.services %}
               <li>
+                {% assign service_slug = '/services/' | append: service.slug %}
                 <a
-                  href="/services/{{ service.slug }}"
+                  href="{{ service_slug | relative_url }}"
                   class="hover:text-gray-300"
                   >{{ service.title }}</a
                 >
@@ -144,6 +146,7 @@
           </div>
         </div>
       </header>
+
       {{ content }}
 
       <!-- FOOTER -->

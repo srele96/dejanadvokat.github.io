@@ -12,6 +12,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      BASEURL: ${{ vars.BASEURL }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
