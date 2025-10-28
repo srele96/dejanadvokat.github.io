@@ -42,7 +42,7 @@ jobs:
           bundle install
 
       - name: Build full site (Lucide + Jekyll)
-        run: ./build-site.sh
+        run: JEKYLL_ENV=production ./build-site.sh
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4

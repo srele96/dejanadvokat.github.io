@@ -9,6 +9,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-postcss-v2
 
+url: https://dejanadvokat.github.io
+
 # https://github.com/bglw/jekyll-postcss-v2/tree/main
 # Changing source directory requires us to adjust the postcss plugin
 # expected configuration.
