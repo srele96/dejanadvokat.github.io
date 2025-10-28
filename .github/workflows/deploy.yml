@@ -40,7 +40,7 @@ jobs:
           bundle install
 
       - name: Build full site (Lucide + Jekyll)
-        run: ./scripts/build-site.sh
+        run: ./build-site.sh
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
