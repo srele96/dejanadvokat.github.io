@@ -68,7 +68,13 @@ The prod bulid:
 node build.prod.js
 ```
 
-Build for production:
+This is useful if server serves the site directory from a subpath (e.g. example.com/blog). Build for production with baseurl prefix:
+
+```bash
+BASEURL="/blog" ./build-site.sh
+```
+
+Build for production without baseurl prefix:
 
 ```bash
 ./build-site.sh
