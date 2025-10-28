@@ -1,15 +1,3 @@
-ADD BUILD SCRIPTS FOR GITHUB PAGES
-
-CONTENT / UX FIXES:
-
-- Move description from `pravne usluge` from front page to /services cards
-- Remove short descriptions from /services cards
-- Remove 'Advokat Dejan Vasiljević' from title in every /services/:slug
-
-MENU FIXES:
-
-- Make menu /services dropdown on hover & click (services) takes user to the services page
-
 MOTIVATION:
 
 - Add section how long has been working as a lawyer
@@ -19,14 +7,6 @@ MOTIVATION:
 - Motivation for doing the lawyer job
 - Passion for doing the lawyer job
 
-SERVICES
+ADD BUILD SCRIPTS FOR GITHUB PAGES
 
-IS THE STRUCTURE FOR THE LIST SEMANTICALLY CORRECT?
-
-<li>
-  <h3>
-  <p>
-
-CHANGE briefServices and briefFront
-
-FIX THE DROPDOWN MENU TO ENUMERATE SERVICES FROM _data/services.yml
+We have to build the jekyll from github actions.

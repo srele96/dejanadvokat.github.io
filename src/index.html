@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Advokat Dejan Vasiljević | Pravni saveti i zastupanje
+title: Pravni saveti i zastupanje
 description: Pružanje profesionalnih pravnih usluga. Advokatska kancelarija Vasiljević Dejan pruža klijentima pravnu sigurnost, poverenje i profesionalno zastupanje.
 ---
 
@@ -119,31 +119,27 @@ description: Pružanje profesionalnih pravnih usluga. Advokatska kancelarija Vas
         </a>
       </h2>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- SERVICES -->
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none">
         {% for service in site.data.services %}
-        <article
-          class="flex border border-gray-200 rounded-lg bg-white shadow-sm"
-        >
+        <li class="flex border border-gray-200 rounded-lg bg-white shadow-sm">
           <a
             href="/services/{{ service.slug }}"
             class="group flex flex-col justify-between p-5 w-full h-full focus:outline-none focus:ring-2 focus:ring-blue-700 rounded-lg"
           >
-            <div>
-              <h3
-                class="text-lg font-semibold mb-2 group-hover:text-blue-700 transition"
-              >
-                <i
-                  data-lucide="{{ service.icon }}"
-                  class="inline-block w-5 h-5 align-middle text-gray-700"
-                ></i>
-                {{ service.title }}
-              </h3>
-              <p class="mb-2 text-gray-700">{{ service.briefFront }}</p>
+            <div
+              class="text-lg font-semibold group-hover:text-blue-700 transition"
+            >
+              <i
+                data-lucide="{{ service.icon }}"
+                class="inline-block w-5 h-5 align-middle text-gray-700"
+              ></i>
+              {{ service.title }}
             </div>
           </a>
-        </article>
+        </li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
   </section>
 </main>

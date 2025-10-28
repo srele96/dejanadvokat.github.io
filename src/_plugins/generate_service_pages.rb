@@ -7,7 +7,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
       .new(site, site.source, File.join("services", item["slug"]), "index.html")
       .tap do |page|
         page.data["layout"] = "service"
-        page.data["title"] = item["title"] + " - Advokat Dejan Vasiljević"
+        page.data["title"] = item["title"]
         page.data["description"] = item["description"]
         page.data["slug"] = item["slug"]
         page.data["sections"] = item["sections"] || []

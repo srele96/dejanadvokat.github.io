@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} | {{ site.data.meta.title }}</title>
     <meta name="description" content="{{ page.description }}" />
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" />
     <link
@@ -56,83 +56,15 @@
                 <ul
                   class="absolute hidden group-hover:block bg-black text-white rounded-lg shadow-lg p-2 w-56"
                 >
+                  {% for service in site.data.services %}
                   <li>
                     <a
-                      href="/services/litigation"
+                      href="/services/{{ service.slug }}"
                       class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Parnica</a
+                      >{{ service.title }}</a
                     >
                   </li>
-                  <li>
-                    <a
-                      href="/services/criminal-law"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Krivično pravo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/commercial-law"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Privredno pravo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/labor-law"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Radno pravo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/family-law"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Porodično pravo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/contracts"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Ugovori</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/damages"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Naknada štete</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/enforcement"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Izvršni postupci</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/inheritance"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Ostavinski postupci</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/land-law"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Zemljišno-knjižno pravo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/services/administrative"
-                      class="block px-3 py-2 hover:bg-white/10 rounded"
-                      >Upravni postupci</a
-                    >
-                  </li>
+                  {% endfor %}
                 </ul>
               </li>
               <li>
@@ -199,61 +131,15 @@
             >
 
             <ul class="flex flex-col gap-3">
+              {% for service in site.data.services %}
               <li>
-                <a href="/services/litigation" class="hover:text-gray-300"
-                  >Parnica</a
+                <a
+                  href="/services/{{ service.slug }}"
+                  class="hover:text-gray-300"
+                  >{{ service.title }}</a
                 >
               </li>
-              <li>
-                <a href="/services/criminal-law" class="hover:text-gray-300"
-                  >Krivično pravo</a
-                >
-              </li>
-              <li>
-                <a href="/services/commercial-law" class="hover:text-gray-300"
-                  >Privredno pravo</a
-                >
-              </li>
-              <li>
-                <a href="/services/labor-law" class="hover:text-gray-300"
-                  >Radno pravo</a
-                >
-              </li>
-              <li>
-                <a href="/services/family-law" class="hover:text-gray-300"
-                  >Porodično pravo</a
-                >
-              </li>
-              <li>
-                <a href="/services/contracts" class="hover:text-gray-300"
-                  >Ugovori</a
-                >
-              </li>
-              <li>
-                <a href="/services/damages" class="hover:text-gray-300"
-                  >Naknada štete</a
-                >
-              </li>
-              <li>
-                <a href="/services/enforcement" class="hover:text-gray-300"
-                  >Izvršni postupci</a
-                >
-              </li>
-              <li>
-                <a href="/services/inheritance" class="hover:text-gray-300"
-                  >Ostavinski postupci</a
-                >
-              </li>
-              <li>
-                <a href="/services/land-law" class="hover:text-gray-300"
-                  >Zemljišno-knjižno pravo</a
-                >
-              </li>
-              <li>
-                <a href="/services/administrative" class="hover:text-gray-300"
-                  >Upravni postupci</a
-                >
-              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>

@@ -5,8 +5,7 @@
     Pomažem klijentima u pripremi, vođenju i uspešnom okončanju parničnih postupaka, 
     uz temeljnu pravnu strategiju i zastupanje pred sudovima.
   icon: landmark
-  briefServices: Zastupanje u svim vrstama sudskih sporova između fizičkih i pravnih lica.
-  briefFront: >
+  brief: >
     Parnični postupci obuhvataju sve sudske sporove između fizičkih i
     pravnih lica. Pomažem klijentima u pripremi, vođenju i uspešnom
     okončanju parničnih postupaka, uz temeljnu pravnu strategiju i
@@ -67,8 +66,7 @@
     Savetujem i zastupam klijente u vezi sa kupoprodajom, zakonom o svojini, upisom prava
     u katastar, ugovorima o zakupu i sporovima oko granica i vlasništva.
   icon: home
-  briefServices: Kupoprodaja, zakupi, upisi u katastar, svojinska i imovinska pitanja.
-  briefFront: >
+  brief: >
     Savetujem i zastupam klijente u vezi sa kupoprodajom, zakonom o
     svojini, upisom prava u katastar, ugovorima o zakupu i sporovima oko
     granica i vlasništva.
@@ -134,8 +132,7 @@
     Pružam pravnu podršku privrednim društvima u osnivanju, izmenama akata, vođenju
     poslovanja i rešavanju sporova između osnivača i partnera.
   icon: building-2
-  briefServices: Osnivanje firmi, partnerstva, akta o osnivanju i poslovni sporovi.
-  briefFront: >
+  brief: >
     Pružam pravnu podršku privrednim društvima u osnivanju, izmenama
     akata, vođenju poslovanja i rešavanju sporova između osnivača i
     partnera.
@@ -196,10 +193,7 @@
     pomoć oštećenima 
     i zastupam klijente u svim fazama krivičnog postupka.
   icon: shield
-  briefServices: >
-    Odbrana okrivljenih i zastupanje oštećenih u krivičnim i
-    prekršajnim postupcima.
-  briefFront: >
+  brief: >
     Branim okrivljene u krivičnim i prekršajnim postupcima, pružam
     pravnu pomoć oštećenima i zastupam klijente u svim fazama krivičnog
     postupka.
@@ -249,12 +243,11 @@
     Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima iz radnog odnosa — 
     od nezakonitog otkaza, mobinga i neisplaćenih zarada, do zaštite prava iz ugovora o radu.
   icon: briefcase
-  briefServices: Nezakoniti otkazi, mobing, ugovori o radu i zaštita prava zaposlenih.
   briefLong: >
     Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima iz
     radnog odnosa — od nezakonitog otkaza, mobinga i neisplaćenih
     zarada, do zaštite prava iz ugovora o radu.
-  briefFront: >
+  brief: >
     Pružam pravnu zaštitu zaposlenima i poslodavcima u sporovima iz
     radnog odnosa — od nezakonitog otkaza, mobinga i neisplaćenih
     zarada, do zaštite prava iz ugovora o radu.
@@ -305,8 +298,7 @@
     Savetujem klijente u vezi sa porezima na dohodak, dobit, imovinu i nasledstvo. 
     Zastupam u poreskim postupcima i sporovima pred Poreskom upravom.
   icon: banknote
-  briefServices: Savetovanje i zastupanje u poreskim postupcima i sporovima.
-  briefFront: >
+  brief: >
     Savetujem klijente u vezi sa porezima na dohodak, dobit, imovinu i
     nasledstvo. Zastupam u poreskim postupcima i sporovima pred Poreskom
     upravom.
@@ -355,8 +347,7 @@
     Zastupam u slučajevima saobraćajnih nezgoda, povreda na radu, 
     medicinskih grešaka i drugih vidova materijalne i nematerijalne štete.
   icon: circle-dollar-sign
-  briefServices: Saobraćajne nezgode, povrede na radu i druga potraživanja za štetu.
-  briefFront: >
+  brief: >
     Zastupam u slučajevima saobraćajnih nezgoda, povreda na radu,
     medicinskih grešaka i drugih vidova materijalne i nematerijalne
     štete.
@@ -411,8 +402,7 @@
     Pomažem u postupcima razvoda, poveravanja dece, alimentacije, 
     utvrđivanja očinstva, starateljstva, deobe zajedničke imovine i naslednih sporova.
   icon: users
-  briefServices: Razvodi, alimentacija, starateljstvo i nasledni sporovi.
-  briefFront: >
+  brief: >
     Pomažem u postupcima razvoda, poveravanja dece, alimentacije,
     utvrđivanja očinstva, starateljstva, deobe zajedničke imovine i
     naslednih sporova.
@@ -459,8 +449,10 @@
     Pružam zaštitu autorskih prava, žigova, patenata i medijskih sadržaja. 
     Zastupam autore, firme i medije u sporovima o povredi prava intelektualne svojine.
   icon: copyright
-  briefServices: Autorska prava, žigovi, patenti i zaštita medijskih sadržaja.
-  briefFront: Autorska prava, žigovi, patenti i zaštita medijskih sadržaja.
+  brief: >
+    Zastupam preduzetnike i kompanije u privrednim sporovima, naplati
+    potraživanja, ugovornim odnosima i postupcima pred privrednim
+    sudovima.
   sections:
     - heading: Zaštita i registracija prava
       paragraphs:
@@ -507,8 +499,7 @@
     Zastupam preduzetnike i kompanije u privrednim sporovima, naplati potraživanja, 
     ugovornim odnosima i postupcima pred privrednim sudovima.
   icon: factory
-  briefServices: Ugovorni odnosi, naplata potraživanja i zastupanje pred privrednim sudovima.
-  briefFront: >
+  brief: >
     Zastupam preduzetnike i kompanije u privrednim sporovima, naplati
     potraživanja, ugovornim odnosima i postupcima pred privrednim
     sudovima.
@@ -559,8 +550,7 @@
   title: Naplata potraživanja i izvršenje
   description: "Pomažem klijentima da brzo i efikasno naplate svoja potraživanja, putem pregovora, sudskih i izvršnih postupaka."
   icon: file-check
-  briefServices: Pokretanje i sprovođenje izvršnih postupaka i naplate potraživanja.
-  briefFront: >
+  brief: >
     Pomažem klijentima da brzo i efikasno naplate svoja potraživanja,
     putem pregovora, sudskih i izvršnih postupaka.
   sections:
