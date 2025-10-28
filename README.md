@@ -54,8 +54,16 @@ bundle exec jekyll build
 
 Build lucide icons separately (this step is required because lucide CDN build is too slow for production and html templates don't integrate well with javascript modules):
 
+The development build with watch mode:
+
 ```bash
-node build.js
+node build.dev.js
+```
+
+The prod bulid:
+
+```bash
+node build.prod.js
 ```
 
 Documentation on how what to do and how.
