@@ -18,6 +18,8 @@ Install `rvm` <https://rvm.io/>
 
 ## Docs
 
+Documentation on how what to do and how.
+
 **_It is conventional to keep Gemfile in the root._**
 
 Setup local bundle path to avoid installing gems globally:
@@ -66,7 +68,11 @@ The prod bulid:
 node build.prod.js
 ```
 
-Documentation on how what to do and how.
+Build for production:
+
+```bash
+./build-site.sh
+```
 
 ## TODO
 
