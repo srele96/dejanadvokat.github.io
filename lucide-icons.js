@@ -14,6 +14,7 @@ import {
   Factory,
   FileCheck,
   ExternalLink,
+  Phone,
   createIcons,
 } from "lucide";
 
@@ -34,5 +35,6 @@ createIcons({
     Factory,
     FileCheck,
     ExternalLink,
+    Phone,
   },
 });
